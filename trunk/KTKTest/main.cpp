@@ -1,4 +1,4 @@
-#include "KTK.h"
+#include "Ktk.h"
 
 using namespace Ktk;
 
@@ -9,6 +9,8 @@ int main()
     window->setTitle("It Works!");
     window->setPosition(150,150);
     window->setIconify(true);
+    Button *b = new Button();
+    window->add(b);
     return window->exec();
 }
 
