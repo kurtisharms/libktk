@@ -31,12 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="/usr/include/cairo" />
-			<Add directory="/home/kurtis/Programming/Projects/Main/KTK/libKTK" />
+			<Add directory="../libKTK" />
 		</Compiler>
 		<Linker>
 			<Add library="cairo" />
-			<Add library="/home/kurtis/Programming/Projects/Main/KTK/libKTK/bin/Debug/KTK.so" />
-			<Add library="boost_thread" />
+			<Add library="KTK" />
+			<Add directory="../libKTK/bin/Debug" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
