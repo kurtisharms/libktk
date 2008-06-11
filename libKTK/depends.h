@@ -6,8 +6,8 @@
 #include <fstream>
 #include <string>
 #include <cstring>
-#include <boost/thread/thread.hpp>
-#include <boost/bind.hpp>
+//#include <boost/thread/thread.hpp>
+//#include <boost/bind.hpp>
 
 extern "C"
 {
