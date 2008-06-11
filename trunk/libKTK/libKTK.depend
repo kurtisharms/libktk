@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1212489909 source:/home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKApp.cpp
+	"KTKApp.h"
+
+1212490652 /home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKApp.h
+	"depends.h"
+
+1212662235 /home/kurtis/Programming/Projects/Main/KTK/libKTK/depends.h
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<string>
+	<cstring>
+	<boost/thread/thread.hpp>
+	<boost/bind.hpp>
+	<cairo.h>
+
+1207929780 /usr/include/cairo/cairo.h
+	<cairo-features.h>
+	<cairo-deprecated.h>
+
+1207929780 /usr/include/cairo/cairo-features.h
+
+1207929780 /usr/include/cairo/cairo-deprecated.h
+
+1207929780 /usr/include/cairo/cairo-xlib.h
+	<cairo.h>
+	<X11/Xlib.h>
+
+1212492292 source:/home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKWindow.cpp
+	"KTKWindow.h"
+
+1212580231 /home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKWindow.h
+	"depends.h"
+	<cairo-xlib.h>
+	<X11/Xutil.h>
+	"KTKWindow_X11.h"
+
+1212634383 source:/home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKWindow_X11.cpp
+	"KTKWindow.h"
+
+1212634344 /home/kurtis/Programming/Projects/Main/KTK/libKTK/KTKWindow_X11.h
+	"depends.h"
+
+1212634962 source:/home/kurtis/Programming/Projects/Main/KTK/libKTK/Application.cpp
+	"Application.h"
+
+1212634743 /home/kurtis/Programming/Projects/Main/KTK/libKTK/Application.h
+	"depends.h"
+
+1213089719 source:/home/kurtis/Programming/Projects/Main/KTK/libKTK/Frame_X11.cpp
+	"KTK.h"
+
+1212639424 /home/kurtis/Programming/Projects/Main/KTK/libKTK/KTK.h
+	"depends.h"
+	<cairo-xlib.h>
+	<X11/Xutil.h>
+	"Frame_X11.h"
+
+1213089648 /home/kurtis/Programming/Projects/Main/KTK/libKTK/Frame_X11.h
+	"depends.h"
+
