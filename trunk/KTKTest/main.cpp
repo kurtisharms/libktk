@@ -1,5 +1,6 @@
 #include "KTK.h"
 
+using namespace Ktk;
 
 int main()
 {

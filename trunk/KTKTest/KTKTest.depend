@@ -42,10 +42,10 @@
 1213090076 /home/kurtis/Programming/Projects/Main/KTK/libKTK/Frame_X11.h
 	"depends.h"
 
-1213173994 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
+1213177255 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
 	"KTK.h"
 
-1213171919 /home/kurtis/Programming/Projects/KTK/libKTK/KTK.h
+1213176524 /home/kurtis/Programming/Projects/KTK/libKTK/KTK.h
 	"depends.h"
 	<cairo-xlib.h>
 	<X11/Xutil.h>
@@ -59,6 +59,6 @@
 	<cstring>
 	<cairo.h>
 
-1213171919 /home/kurtis/Programming/Projects/KTK/libKTK/Frame_X11.h
-	"depends.h"
+1213177383 /home/kurtis/Programming/Projects/KTK/libKTK/Frame_X11.h
+	"KTK.h"
 

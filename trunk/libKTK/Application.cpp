@@ -1,11 +1,16 @@
 #include "Application.h"
 
-Application::Application()
+namespace Ktk
 {
-    //ctor
-}
 
-Application::~Application()
-{
-    //dtor
-}
+    Application::Application()
+    {
+        //ctor
+    }
+
+    Application::~Application()
+    {
+        //dtor
+    }
+
+} // Ktk namespace
