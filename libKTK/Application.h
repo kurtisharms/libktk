@@ -2,13 +2,18 @@
 #define APP_H
 #include "depends.h"
 
-class Application
+namespace Ktk
 {
-public:
-    Application();
-    virtual ~Application();
-protected:
-private:
-};
+
+    class Application
+    {
+    public:
+        Application();
+        virtual ~Application();
+    protected:
+    private:
+    };
+
+} // Ktk namespace
 
 #endif // APP_H
