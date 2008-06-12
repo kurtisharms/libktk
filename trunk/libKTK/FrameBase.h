@@ -25,10 +25,20 @@ namespace Ktk
                 p->draw();
             }*/
         }
+
         template <class WidgetType>
         void remove(WidgetType *w)
         {
-        }
+            Widget* iw;
+            for (int i=0; i<WidgetList.size(); i++) {
+            //for (vector<Widget*>::iterator it = WidgetList.begin(); it!=WidgetList.end(); ++it) {
+                iw = WidgetList[i];
+                if(iw->getId() == w->getId())
+                {
+                    WidgetList.erase(WidgetList.begin() + i);
+                }
+            }
+         }
     };
 
 } // Ktk namespace

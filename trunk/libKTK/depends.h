@@ -7,6 +7,7 @@
 #include <string>
 #include <cstring>
 #include <vector>
+#include <ctime>
 //#include <boost/thread/thread.hpp>
 //#include <boost/bind.hpp>
 
