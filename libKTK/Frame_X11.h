@@ -1,12 +1,13 @@
 #ifndef FRAME_H
 #define FRAME_H
 #include "Ktk.h"
+#include "FrameBase.h"
 #ifdef CAIRO_HAS_XLIB_SURFACE
 
 namespace Ktk
 {
 
-    class Frame
+    class Frame: public Ktk::FrameBase
     {
     public:
         Frame(string title, int width, int height, int xpos, int ypos);
@@ -54,19 +55,6 @@ namespace Ktk
         void win_init();
         void win_draw();
         void win_handle_events();
-
-
-
-    public:
-        template <class WidgetType>
-        void add(WidgetType *w)
-        {
-            cout << "hi" << w <<endl;
-        }
-        template <class WidgetType>
-        void remove(WidgetType *w)
-        {
-        }
 
     };
 

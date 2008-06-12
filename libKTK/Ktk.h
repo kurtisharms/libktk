@@ -9,8 +9,10 @@ extern "C"
 #include <cairo-xlib.h>
 #include <X11/Xutil.h>
 }
-
+#ifndef BUILD_LIB
+#include "FrameBase.h"
 #include "Frame_X11.h"
+#endif // BUILD_LIB
 #endif // CAIRO_HAS_XLIB_SURFACE
 
 /*
