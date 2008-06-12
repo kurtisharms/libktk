@@ -5,12 +5,18 @@ namespace Ktk
 
     Widget::Widget()
     {
-        //ctor
+        srand((unsigned)time(0));
+        widgetId = rand();
     }
 
     Widget::~Widget()
     {
         //dtor
+    }
+
+    int Widget::getId()
+    {
+        return widgetId;
     }
 
 

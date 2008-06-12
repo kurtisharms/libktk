@@ -11,7 +11,9 @@ namespace Ktk
         Widget();
         virtual ~Widget();
         virtual void draw() = 0;
+        int getId();
     protected:
+        int widgetId;
     private:
     };
 

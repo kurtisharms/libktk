@@ -11,6 +11,7 @@ int main()
     window->setIconify(true);
     Button *b = new Button();
     window->add(b);
+    window->remove(b);
     return window->exec();
 }
 
