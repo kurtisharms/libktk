@@ -10,6 +10,7 @@ namespace Ktk
     public:
         Widget();
         virtual ~Widget();
+        virtual void draw() = 0;
     protected:
     private:
     };

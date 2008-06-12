@@ -1,6 +1,7 @@
 #ifndef FRAMEBASE_H
 #define FRAMEBASE_H
 #include "Ktk.h"
+#include "Widget.h"
 
 namespace Ktk
 {
@@ -10,13 +11,19 @@ namespace Ktk
     public:
         FrameBase();
         virtual ~FrameBase();
+        vector<Ktk::Widget*> WidgetList;
     protected:
     private:
     public:
         template <class WidgetType>
         void add(WidgetType *w)
         {
-            cout << "hi" << w <<endl;
+            Widget *x = (Widget*) w;
+            WidgetList.push_back(x);
+            /*for (int i=0; i<WidgetList.size(); i++) {
+                Widget* p = WidgetList[i];
+                p->draw();
+            }*/
         }
         template <class WidgetType>
         void remove(WidgetType *w)
