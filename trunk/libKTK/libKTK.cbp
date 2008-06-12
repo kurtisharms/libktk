@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add option="-DBUILD_LIB" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,6 +30,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-DBUILD_LIB" />
 			<Add directory="/usr/include/cairo" />
 		</Compiler>
 		<Linker>
@@ -41,6 +41,8 @@
 		<Unit filename="Application.h" />
 		<Unit filename="Button.cpp" />
 		<Unit filename="Button.h" />
+		<Unit filename="FrameBase.cpp" />
+		<Unit filename="FrameBase.h" />
 		<Unit filename="Frame_X11.cpp" />
 		<Unit filename="Frame_X11.h" />
 		<Unit filename="Ktk.h" />
