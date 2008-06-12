@@ -66,12 +66,13 @@
 1213177383 /home/kurtis/Programming/Projects/KTK/libKTK/Application.h
 	"depends.h"
 
-1213172707 /home/kurtis/Programming/Projects/KTK/libKTK/depends.h
+1213259102 /home/kurtis/Programming/Projects/KTK/libKTK/depends.h
 	<iostream>
 	<cstdlib>
 	<fstream>
 	<string>
 	<cstring>
+	<vector>
 	<cairo.h>
 
 1213177383 source:/home/kurtis/Programming/Projects/KTK/libKTK/Frame_X11.cpp
@@ -90,7 +91,7 @@
 1213182747 source:/home/kurtis/Programming/Projects/KTK/libKTK/Widget.cpp
 	"Widget.h"
 
-1213183160 /home/kurtis/Programming/Projects/KTK/libKTK/Widget.h
+1213263285 /home/kurtis/Programming/Projects/KTK/libKTK/Widget.h
 	"Ktk.h"
 
 1213256870 /home/kurtis/Programming/Projects/KTK/libKTK/Ktk.h
@@ -105,7 +106,7 @@
 1213177911 source:/home/kurtis/Programming/Projects/KTK/libKTK/Button.cpp
 	"Button.h"
 
-1213181568 /home/kurtis/Programming/Projects/KTK/libKTK/Button.h
+1213263468 /home/kurtis/Programming/Projects/KTK/libKTK/Button.h
 	"Ktk.h"
 	"Widget.h"
 
@@ -115,9 +116,10 @@
 1213183479 source:/home/kurtis/Programming/Projects/KTK/libKTK/BaseFrame.cpp
 	"BaseFrame.h"
 
-1213257018 /home/kurtis/Programming/Projects/KTK/libKTK/FrameBase.h
+1213264950 /home/kurtis/Programming/Projects/KTK/libKTK/FrameBase.h
 	"Ktk.h"
+	"Widget.h"
 
-1213256943 source:/home/kurtis/Programming/Projects/KTK/libKTK/FrameBase.cpp
+1213257018 source:/home/kurtis/Programming/Projects/KTK/libKTK/FrameBase.cpp
 	"FrameBase.h"
 

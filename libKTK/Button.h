@@ -11,6 +11,10 @@ namespace Ktk
     public:
         Button();
         virtual ~Button();
+        virtual void draw()
+        {
+            cout << "this is a button to draw!" <<endl;
+        }
     protected:
     private:
     };
