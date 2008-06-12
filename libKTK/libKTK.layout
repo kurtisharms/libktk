@@ -10,20 +10,23 @@
 	<File name="Button.h" open="1" top="0" tabpos="6">
 		<Cursor position="92" topLine="0" />
 	</File>
+	<File name="FrameBase.h" open="1" top="1" tabpos="9">
+		<Cursor position="1008" topLine="0" />
+	</File>
 	<File name="Frame_X11.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="4401" topLine="9" />
 	</File>
 	<File name="Frame_X11.h" open="1" top="0" tabpos="2">
-		<Cursor position="1143" topLine="46" />
+		<Cursor position="1143" topLine="41" />
 	</File>
-	<File name="Ktk.h" open="1" top="0" tabpos="8">
+	<File name="Ktk.h" open="1" top="0" tabpos="7">
 		<Cursor position="166" topLine="5" />
 	</File>
 	<File name="Widget.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="137" topLine="0" />
 	</File>
 	<File name="Widget.h" open="1" top="0" tabpos="4">
-		<Cursor position="176" topLine="0" />
+		<Cursor position="176" topLine="2" />
 	</File>
 	<File name="depends.h" open="1" top="0" tabpos="1">
 		<Cursor position="36" topLine="0" />
