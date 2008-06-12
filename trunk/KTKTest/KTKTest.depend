@@ -59,13 +59,15 @@
 	<cstring>
 	<cairo.h>
 
-1213183935 /home/kurtis/Programming/Projects/KTK/libKTK/Frame_X11.h
+1213257001 /home/kurtis/Programming/Projects/KTK/libKTK/Frame_X11.h
 	"Ktk.h"
+	"FrameBase.h"
 
-1213183842 /home/kurtis/Programming/Projects/KTK/libKTK/Ktk.h
+1213256870 /home/kurtis/Programming/Projects/KTK/libKTK/Ktk.h
 	"depends.h"
 	<cairo-xlib.h>
 	<X11/Xutil.h>
+	"FrameBase.h"
 	"Frame_X11.h"
 	"Widget.h"
 	"Button.h"
@@ -76,4 +78,7 @@
 1213181568 /home/kurtis/Programming/Projects/KTK/libKTK/Button.h
 	"Ktk.h"
 	"Widget.h"
+
+1213257018 /home/kurtis/Programming/Projects/KTK/libKTK/FrameBase.h
+	"Ktk.h"
 
