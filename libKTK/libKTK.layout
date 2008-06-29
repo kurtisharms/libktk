@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Application.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="148" topLine="0" />
-	</File>
-	<File name="Application.h" open="0" top="0" tabpos="0">
-		<Cursor position="184" topLine="0" />
-	</File>
-	<File name="Button.h" open="1" top="0" tabpos="6">
-		<Cursor position="92" topLine="0" />
-	</File>
-	<File name="FrameBase.cpp" open="1" top="0" tabpos="10">
-		<Cursor position="268" topLine="0" />
-	</File>
-	<File name="FrameBase.h" open="1" top="1" tabpos="8">
-		<Cursor position="285" topLine="0" />
-	</File>
-	<File name="Frame_X11.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="4401" topLine="0" />
-	</File>
-	<File name="Frame_X11.h" open="1" top="0" tabpos="2">
-		<Cursor position="1143" topLine="0" />
-	</File>
-	<File name="Ktk.h" open="1" top="0" tabpos="7">
-		<Cursor position="166" topLine="1" />
-	</File>
-	<File name="Widget.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="137" topLine="0" />
-	</File>
-	<File name="Widget.h" open="1" top="0" tabpos="4">
-		<Cursor position="176" topLine="0" />
-	</File>
-	<File name="depends.h" open="1" top="0" tabpos="1">
-		<Cursor position="36" topLine="0" />
+	<File name="Ktk.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="20" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
