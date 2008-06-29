@@ -37,18 +37,19 @@
 			<Add library="cairo" />
 			<Add library="boost_thread" />
 		</Linker>
-		<Unit filename="Application.cpp" />
-		<Unit filename="Application.h" />
-		<Unit filename="Button.cpp" />
-		<Unit filename="Button.h" />
-		<Unit filename="FrameBase.cpp" />
-		<Unit filename="FrameBase.h" />
-		<Unit filename="Frame_X11.cpp" />
-		<Unit filename="Frame_X11.h" />
-		<Unit filename="Ktk.h" />
-		<Unit filename="Widget.cpp" />
-		<Unit filename="Widget.h" />
-		<Unit filename="depends.h" />
+		<Unit filename="Ktk.hpp" />
+		<Unit filename="src/Application.cpp" />
+		<Unit filename="src/Application.h" />
+		<Unit filename="src/Button.cpp" />
+		<Unit filename="src/Button.h" />
+		<Unit filename="src/FrameBase.cpp" />
+		<Unit filename="src/FrameBase.h" />
+		<Unit filename="src/Frame_X11.cpp" />
+		<Unit filename="src/Frame_X11.h" />
+		<Unit filename="src/Ktk.h" />
+		<Unit filename="src/Widget.cpp" />
+		<Unit filename="src/Widget.h" />
+		<Unit filename="src/depends.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
