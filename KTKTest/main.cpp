@@ -2,6 +2,11 @@
 
 using namespace Ktk;
 
+void fun()
+{
+    cout << "Fun function" <<endl;
+}
+
 int main()
 {
     Frame *window = new Frame("hi there!",400,200,200,50);

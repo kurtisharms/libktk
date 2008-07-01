@@ -14,6 +14,14 @@ namespace Ktk
         vector<Ktk::Widget*> WidgetList;
         void add(Widget* w);
         void remove(Widget* w);
+
+        boost::signal<void ()> OnDraw;
+        boost::signal<void ()> OnMouseOver;
+        boost::signal<void ()> OnMouseOut;
+        boost::signal<void ()> OnMouseMove;
+        boost::signal<void ()> OnMove;
+        boost::signal<void ()> OnClose;
+        boost::signal<void ()> OnResize;
     protected:
     private:
 

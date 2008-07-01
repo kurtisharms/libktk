@@ -12,6 +12,13 @@ namespace Ktk
         virtual ~Widget();
         virtual void draw() = 0;
         int getId();
+
+        boost::signal<void ()> OnDraw;
+        boost::signal<void ()> OnMouseOver;
+        boost::signal<void ()> OnMouseOut;
+        boost::signal<void ()> OnMouseMove;
+        boost::signal<void ()> OnFocus;
+        boost::signal<void ()> OnBlur;
     protected:
         int widgetId;
     private:
