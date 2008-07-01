@@ -34,7 +34,6 @@
 			<Add directory="../libKTK" />
 		</Compiler>
 		<Linker>
-			<Add library="cairo" />
 			<Add library="KTK" />
 			<Add directory="../libKTK/bin/Debug" />
 		</Linker>

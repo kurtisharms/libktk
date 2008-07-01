@@ -130,7 +130,7 @@
 1213177383 /home/kurtis/Programming/Projects/KTK/libKTK/src/Application.h
 	"depends.h"
 
-1213265495 /home/kurtis/Programming/Projects/KTK/libKTK/src/depends.h
+1214910240 /home/kurtis/Programming/Projects/KTK/libKTK/src/depends.h
 	<iostream>
 	<cstdlib>
 	<fstream>
@@ -138,6 +138,7 @@
 	<cstring>
 	<vector>
 	<ctime>
+	<boost/signals.hpp>
 	<cairo.h>
 
 1213177911 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Button.cpp
@@ -156,23 +157,163 @@
 	"Widget.h"
 	"Button.h"
 
-1214648965 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
+1214911596 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
 	"Ktk.h"
 	"Widget.h"
 
-1213265817 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
+1214911323 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
 	"Ktk.h"
 
 1213257001 /home/kurtis/Programming/Projects/KTK/libKTK/src/Frame_X11.h
 	"Ktk.h"
 	"FrameBase.h"
 
-1214648932 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.cpp
+1214910896 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.cpp
 	"FrameBase.h"
 
 1213177383 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Frame_X11.cpp
 	"Frame_X11.h"
 
-1213265697 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.cpp
+1214909327 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.cpp
 	"Widget.h"
+
+1207224508 /usr/include/sigc++-2.0/sigc++/sigc++.h
+	<sigc++/signal.h>
+	<sigc++/connection.h>
+	<sigc++/trackable.h>
+	<sigc++/adaptors/adaptors.h>
+	<sigc++/functors/functors.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/signal.h
+	<list>
+	<sigc++/signal_base.h>
+	<sigc++/type_traits.h>
+	<sigc++/trackable.h>
+	<sigc++/functors/slot.h>
+	<sigc++/functors/mem_fun.h>
+
+1214909665 /usr/include/sigc++-2.0/sigc++/signal_base.h
+	<list>
+	<sigc++/type_traits.h>
+	<sigc++/trackable.h>
+	<sigc++/functors/slot.h>
+	<sigc++/functors/mem_fun.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/type_traits.h
+	<sigc++config.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/trackable.h
+	<list>
+	<sigc++config.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/functors/slot.h
+	<sigc++/trackable.h>
+	<sigc++/visit_each.h>
+	<sigc++/adaptors/adaptor_trait.h>
+	<sigc++/functors/slot_base.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/visit_each.h
+	<sigc++/type_traits.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h
+	<sigc++config.h>
+	<sigc++/visit_each.h>
+	<sigc++/functors/functor_trait.h>
+	<sigc++/functors/ptr_fun.h>
+	<sigc++/functors/mem_fun.h>
+	<sigc++/adaptors/deduce_result_type.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/functors/functor_trait.h
+	<sigc++/type_traits.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h
+	<sigc++/type_traits.h>
+	<sigc++/functors/functor_trait.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h
+	<sigc++/type_traits.h>
+	<sigc++/functors/functor_trait.h>
+	<sigc++/limit_reference.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/limit_reference.h
+	<sigc++/type_traits.h>
+	<sigc++/trackable.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h
+	<sigc++/functors/functor_trait.h>
+
+1207224509 /usr/include/sigc++-2.0/sigc++/functors/slot_base.h
+	<sigc++config.h>
+	<sigc++/trackable.h>
+	<sigc++/functors/functor_trait.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/connection.h
+	<sigc++config.h>
+	<sigc++/signal.h>
+
+1207224509 /usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h
+	<sigc++/adaptors/bind.h>
+	<sigc++/adaptors/bind_return.h>
+	<sigc++/adaptors/hide.h>
+	<sigc++/adaptors/retype_return.h>
+	<sigc++/adaptors/retype.h>
+	<sigc++/adaptors/compose.h>
+	<sigc++/adaptors/exception_catch.h>
+	<sigc++/adaptors/lambda/lambda.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/bind.h
+	<sigc++/adaptors/adaptor_trait.h>
+	<sigc++/adaptors/bound_argument.h>
+
+1207224509 /usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h
+	<sigc++/limit_reference.h>
+	<sigc++/reference_wrapper.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/reference_wrapper.h
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h
+	<sigc++/adaptors/adaptor_trait.h>
+	<sigc++/adaptors/bound_argument.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/hide.h
+	<sigc++/adaptors/adaptor_trait.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h
+	<sigc++/adaptors/adaptor_trait.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/retype.h
+	<sigc++/adaptors/adaptor_trait.h>
+	<sigc++/functors/ptr_fun.h>
+	<sigc++/functors/mem_fun.h>
+	<sigc++/functors/slot.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/compose.h
+	<sigc++/adaptors/adaptor_trait.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h
+	<sigc++/adaptors/adaptor_trait.h>
+
+1207224509 /usr/include/sigc++-2.0/sigc++/adaptors/lambda/lambda.h
+	<sigc++/adaptors/lambda/base.h>
+	<sigc++/adaptors/lambda/select.h>
+	<sigc++/adaptors/lambda/operator.h>
+	<sigc++/adaptors/lambda/group.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h
+	<sigc++/adaptors/adaptor_trait.h>
+	<sigc++/reference_wrapper.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h
+	<sigc++/adaptors/lambda/base.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/lambda/operator.h
+	<sigc++/adaptors/lambda/base.h>
+
+1207224508 /usr/include/sigc++-2.0/sigc++/adaptors/lambda/group.h
+	<sigc++/adaptors/lambda/base.h>
+
+1207224509 /usr/include/sigc++-2.0/sigc++/functors/functors.h
+	<sigc++/functors/slot.h>
+	<sigc++/functors/ptr_fun.h>
+	<sigc++/functors/mem_fun.h>
 

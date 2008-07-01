@@ -8,8 +8,8 @@
 #include <cstring>
 #include <vector>
 #include <ctime>
-//#include <boost/thread/thread.hpp>
-//#include <boost/bind.hpp>
+
+#include <boost/signals.hpp>
 
 extern "C"
 {
