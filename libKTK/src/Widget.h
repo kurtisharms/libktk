@@ -1,6 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 #include "Ktk.h"
+#include "Signal.h"
 
 namespace Ktk
 {
@@ -13,12 +14,12 @@ namespace Ktk
         virtual void draw() = 0;
         int getId();
 
-        boost::signal<void ()> OnDraw;
-        boost::signal<void ()> OnMouseOver;
-        boost::signal<void ()> OnMouseOut;
-        boost::signal<void ()> OnMouseMove;
-        boost::signal<void ()> OnFocus;
-        boost::signal<void ()> OnBlur;
+        Ktk::Signal OnDraw;
+        Ktk::Signal OnMouseOver;
+        Ktk::Signal OnMouseOut;
+        Ktk::Signal OnMouseMove;
+        Ktk::Signal OnFocus;
+        Ktk::Signal OnBlur;
     protected:
         int widgetId;
     private:

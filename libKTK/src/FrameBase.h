@@ -15,13 +15,13 @@ namespace Ktk
         void add(Widget* w);
         void remove(Widget* w);
 
-        boost::signal<void ()> OnDraw;
-        boost::signal<void ()> OnMouseOver;
-        boost::signal<void ()> OnMouseOut;
-        boost::signal<void ()> OnMouseMove;
-        boost::signal<void ()> OnMove;
-        boost::signal<void ()> OnClose;
-        boost::signal<void ()> OnResize;
+        Ktk::Signal OnDraw;
+        Ktk::Signal OnMouseOver;
+        Ktk::Signal OnMouseOut;
+        Ktk::Signal OnMouseMove;
+        Ktk::Signal OnMove;
+        Ktk::Signal OnClose;
+        Ktk::Signal OnResize;
     protected:
     private:
 

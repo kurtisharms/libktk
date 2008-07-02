@@ -20,9 +20,8 @@ namespace Ktk
     void FrameBase::remove(Widget* w)
     {
         Widget* iw;
-        for (int i=0; i<WidgetList.size(); i++)
+        for (unsigned int i=0; i<WidgetList.size(); i++)
         {
-            //for (vector<Widget*>::iterator it = WidgetList.begin(); it!=WidgetList.end(); ++it) {
             iw = WidgetList[i];
             if (iw->getId() == w->getId())
             {
