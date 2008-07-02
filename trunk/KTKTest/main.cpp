@@ -7,6 +7,11 @@ void fun()
     cout << "Fun function" <<endl;
 }
 
+void ending()
+{
+    cout << "Ending function" <<endl;
+}
+
 int main()
 {
     Frame *window = new Frame("hi there!",400,200,200,50);
@@ -15,6 +20,14 @@ int main()
     window->setPosition(150,150);
     window->setIconify(true);
     Button *b = new Button();
+
+    b->OnMouseMove.connect(fun);
+    b->OnMouseMove += ending;
+    b->OnMouseMove.raise();
+    cout << "Waiting..." <<endl;
+    b->OnMouseMove -= fun;
+    b->OnMouseMove.raise();
+
     window->add(b);
     window->remove(b);
     return window->exec();

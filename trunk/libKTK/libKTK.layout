@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Ktk.hpp" open="1" top="1" tabpos="5">
+	<File name="Ktk.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="1291" topLine="0" />
 	</File>
 	<File name="src/FrameBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="12" />
+		<Cursor position="533" topLine="12" />
 	</File>
-	<File name="src/FrameBase.h" open="1" top="0" tabpos="4">
-		<Cursor position="576" topLine="4" />
+	<File name="src/FrameBase.h" open="1" top="0" tabpos="3">
+		<Cursor position="314" topLine="12" />
+	</File>
+	<File name="src/Frame_X11.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4524" topLine="171" />
 	</File>
 	<File name="src/Ktk.h" open="0" top="0" tabpos="0">
-		<Cursor position="360" topLine="0" />
+		<Cursor position="470" topLine="7" />
+	</File>
+	<File name="src/Signal.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1004" topLine="41" />
+	</File>
+	<File name="src/Signal.h" open="1" top="0" tabpos="4">
+		<Cursor position="470" topLine="7" />
 	</File>
 	<File name="src/Widget.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="20" topLine="0" />
 	</File>
 	<File name="src/Widget.h" open="1" top="0" tabpos="1">
-		<Cursor position="204" topLine="0" />
+		<Cursor position="398" topLine="6" />
 	</File>
-	<File name="src/depends.h" open="0" top="0" tabpos="0">
-		<Cursor position="191" topLine="0" />
+	<File name="src/depends.h" open="1" top="1" tabpos="7">
+		<Cursor position="166" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

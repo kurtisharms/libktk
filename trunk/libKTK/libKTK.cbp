@@ -35,18 +35,21 @@
 		</Compiler>
 		<Linker>
 			<Add library="cairo" />
-			<Add library="boost_signals" />
 		</Linker>
 		<Unit filename="Ktk.hpp" />
 		<Unit filename="src/Application.cpp" />
 		<Unit filename="src/Application.h" />
 		<Unit filename="src/Button.cpp" />
 		<Unit filename="src/Button.h" />
+		<Unit filename="src/Event.cpp" />
+		<Unit filename="src/Event.h" />
 		<Unit filename="src/FrameBase.cpp" />
 		<Unit filename="src/FrameBase.h" />
 		<Unit filename="src/Frame_X11.cpp" />
 		<Unit filename="src/Frame_X11.h" />
 		<Unit filename="src/Ktk.h" />
+		<Unit filename="src/Signal.cpp" />
+		<Unit filename="src/Signal.h" />
 		<Unit filename="src/Widget.cpp" />
 		<Unit filename="src/Widget.h" />
 		<Unit filename="src/depends.h" />

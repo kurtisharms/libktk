@@ -9,8 +9,6 @@
 #include <vector>
 #include <ctime>
 
-#include <boost/signals.hpp>
-
 extern "C"
 {
 #include <cairo.h>

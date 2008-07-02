@@ -20,6 +20,8 @@ extern "C"
     BUILD_LIB should be defined in the library project's #defines list options
 */
 #ifndef BUILD_LIB
+#include "Event.h"
+#include "Signal.h"
 #include "Widget.h"
 #include "Button.h"
 #endif // BUILD_LIB
