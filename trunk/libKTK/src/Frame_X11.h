@@ -25,6 +25,8 @@ namespace Ktk
         string getTitle();
         int getWidth();
         int getHeight();
+        int getPosX();
+        int getPosY();
 
         void raise();
         void lower();
