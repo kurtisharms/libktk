@@ -188,12 +188,34 @@ namespace Ktk
 
     int Frame::getWidth()
     {
+        XWindowAttributes win_attr;
+        XGetWindowAttributes(win->dpy, win->win, &win_attr);
+        win->width = win_attr.width;
         return win->width;
     }
 
     int Frame::getHeight()
     {
+        XWindowAttributes win_attr;
+        XGetWindowAttributes(win->dpy, win->win, &win_attr);
+        win->height = win_attr.height;
         return win->height;
+    }
+
+    int Frame::getPosX()
+    {
+        XWindowAttributes win_attr;
+        XGetWindowAttributes(win->dpy, win->win, &win_attr);
+        win->xpos = win_attr.x;
+        return win->xpos;
+    }
+
+    int Frame::getPosY()
+    {
+        XWindowAttributes win_attr;
+        XGetWindowAttributes(win->dpy, win->win, &win_attr);
+        win->ypos = win_attr.y;
+        return win->ypos;
     }
 
     void Frame::raise()
