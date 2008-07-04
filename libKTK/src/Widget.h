@@ -14,12 +14,12 @@ namespace Ktk
         virtual void draw() = 0;
         int getId();
 
-        Ktk::Signal OnDraw;
-        Ktk::Signal OnMouseOver;
-        Ktk::Signal OnMouseOut;
-        Ktk::Signal OnMouseMove;
-        Ktk::Signal OnFocus;
-        Ktk::Signal OnBlur;
+        Ktk::Signal<Event*> OnDraw;
+        Ktk::Signal<Event*> OnMouseOver;
+        Ktk::Signal<Event*> OnMouseOut;
+        Ktk::Signal<Event*> OnMouseMove;
+        Ktk::Signal<Event*> OnFocus;
+        Ktk::Signal<Event*> OnBlur;
     protected:
         int widgetId;
     private:

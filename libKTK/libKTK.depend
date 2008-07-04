@@ -158,11 +158,11 @@
 	"Widget.h"
 	"Button.h"
 
-1214995099 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
+1215160756 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
 	"Ktk.h"
 	"Widget.h"
 
-1214995063 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
+1215159209 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
 	"Ktk.h"
 	"Signal.h"
 
@@ -173,7 +173,7 @@
 1214995464 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.cpp
 	"FrameBase.h"
 
-1213177383 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Frame_X11.cpp
+1215160140 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Frame_X11.cpp
 	"Frame_X11.h"
 
 1214909327 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.cpp
@@ -325,10 +325,13 @@
 1214992708 /home/kurtis/Programming/Projects/KTK/libKTK/src/Event.h
 	"Ktk.h"
 
-1214997433 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.cpp
+1215159769 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.cpp
 	"Signal.h"
 
-1214997405 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.h
+1215160756 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.h
 	"Ktk.h"
 	"Event.h"
+
+1215159521 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.cpp
+	"Signal.h"
 
