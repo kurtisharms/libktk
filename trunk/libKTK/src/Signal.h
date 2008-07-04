@@ -5,25 +5,76 @@
 
 namespace Ktk
 {
-
+    template<class TEvent>
     class Signal
     {
+        TEvent item;
     public:
-        Signal();
-        virtual ~Signal();
-        typedef void (*func)();
+        Signal()
+        {
+        }
+
+        virtual ~Signal()
+        {
+        }
+
+        typedef void (*func)(TEvent);
+
     protected:
         vector<func> funcVector;
+
     public:
-        void connect(func funcPtr);
-        void disconnect(func funcPtr);
-        void raise();
-        void clear();
-        bool isEmpty();
-        Signal& operator+=(func funcPtr);
-        Signal& operator-=(func funcPtr);
+        void connect(func funcPtr)
+        {
+            funcVector.push_back(funcPtr);
+        }
+
+        void disconnect(func funcPtr)
+        {
+            for (unsigned int i=0; i<funcVector.size(); i++)
+            {
+                if (funcVector[i] == funcPtr)
+                {
+                    funcVector.erase(funcVector.begin() + i);
+                }
+            }
+        }
+
+        void raise(TEvent ev)
+        {
+            for (unsigned int i=0; i<funcVector.size(); i++)
+            {
+                    func funcPtr = funcVector[1];
+                    funcPtr(ev);
+            }
+        }
+
+        void clear()
+        {
+            funcVector.clear();
+        }
+
+        bool isEmpty()
+        {
+            return (funcVector.empty()) ? true : false;
+        }
+
+
+        Signal& operator+=(func funcPtr)
+        {
+            connect(funcPtr);
+            return *this;
+        }
+
+        Signal& operator-=(func funcPtr)
+        {
+            disconnect(funcPtr);
+            return *this;
+        }
     };
 
 } // Ktk namespace
+
+
 
 #endif // SIGNAL_H

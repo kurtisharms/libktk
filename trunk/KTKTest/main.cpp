@@ -2,12 +2,12 @@
 
 using namespace Ktk;
 
-void fun()
+void fun(Event* test)
 {
     cout << "Fun function" <<endl;
 }
 
-void ending()
+void ending(Event* x)
 {
     cout << "Ending function" <<endl;
 }
@@ -21,12 +21,13 @@ int main()
     window->setIconify(true);
     Button *b = new Button();
 
+    Event* x = new Event();
     b->OnMouseMove.connect(fun);
     b->OnMouseMove += ending;
-    b->OnMouseMove.raise();
+    b->OnMouseMove.raise(x);
     cout << "Waiting..." <<endl;
     b->OnMouseMove -= fun;
-    b->OnMouseMove.raise();
+    b->OnMouseMove.raise(x);
 
     window->add(b);
     window->remove(b);

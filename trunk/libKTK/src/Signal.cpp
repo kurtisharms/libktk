@@ -2,65 +2,71 @@
 
 namespace Ktk
 {
-
-    Signal::Signal()
-    {
-        //ctor
-    }
-
-    Signal::~Signal()
-    {
-        //dtor
-    }
-
-    void Signal::connect(func funcPtr)
-    {
-        funcVector.push_back(funcPtr);
-    }
-
-    void Signal::disconnect(func funcPtr)
-    {
-        for (unsigned int i=0; i<funcVector.size(); i++)
+    /*
+        template<class TEvent>
+        Signal<TEvent>::Signal()
         {
-            if (funcVector[i] == funcPtr)
+        }
+
+        template<class TEvent>
+        Signal<TEvent>::~Signal()
+        {
+        }
+
+        template<class TEvent>
+        void Signal<TEvent>::connect(func funcPtr)
+        {
+            funcVector.push_back(funcPtr);
+        }
+
+        template<class TEvent>
+        void Signal<TEvent>::disconnect(func funcPtr)
+        {
+            for (unsigned int i=0; i<funcVector.size(); i++)
             {
-                funcVector.erase(funcVector.begin() + i);
+                if (funcVector[i] == funcPtr)
+                {
+                    funcVector.erase(funcVector.begin() + i);
+                }
             }
         }
-    }
 
-
-    void Signal::raise()
-    {
-        vector<func>::iterator it;
-        for (it=funcVector.begin() ; it < funcVector.end(); it++)
+        template<class TEvent>
+        void Signal<TEvent>::raise()
         {
-            (*it)();
+            //vector<func>::iterator it;
+            //for (it=funcVector.begin() ; it < funcVector.end(); it++)
+            //{
+            //    (*it)();
+            //}
         }
-    }
 
-    void Signal::clear()
-    {
-        funcVector.clear();
-    }
+        template<class TEvent>
+        void Signal<TEvent>::clear()
+        {
+            funcVector.clear();
+        }
 
-    bool Signal::isEmpty()
-    {
-        return (funcVector.empty()) ? true : false;
-    }
+        template<class TEvent>
+        bool Signal<TEvent>::isEmpty()
+        {
+            return (funcVector.empty()) ? true : false;
+        }
 
-    Signal& Signal::operator+=(func funcPtr)
-    {
-        connect(funcPtr);
-        return *this;
-    }
+        template<class TEvent>
+        Signal<TEvent>& Signal<TEvent>::operator+=(func funcPtr)
+        {
+            connect(funcPtr);
+            return *this;
+        }
 
-    Signal& Signal::operator-=(func funcPtr)
-    {
-        disconnect(funcPtr);
-        return *this;
-    }
+        template<class TEvent>
+        Signal<TEvent>& Signal<TEvent>::operator-=(func funcPtr)
+        {
+            disconnect(funcPtr);
+            return *this;
+        }
 
-
+    */
 
 } // Ktk namespace

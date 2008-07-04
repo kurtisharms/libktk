@@ -33,8 +33,8 @@ namespace Ktk
 
         Window root;
 
-        win->width = getWidth();
-        win->height = getHeight();
+        //win->width = getWidth();
+        //win->height = getHeight();
 
         root = DefaultRootWindow(win->dpy);
         win->scr = DefaultScreen(win->dpy);
