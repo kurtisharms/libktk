@@ -41,6 +41,8 @@
 		<Unit filename="src/Application.h" />
 		<Unit filename="src/Button.cpp" />
 		<Unit filename="src/Button.h" />
+		<Unit filename="src/CairoSurface.cpp" />
+		<Unit filename="src/CairoSurface.h" />
 		<Unit filename="src/Event.cpp" />
 		<Unit filename="src/Event.h" />
 		<Unit filename="src/FrameBase.cpp" />
