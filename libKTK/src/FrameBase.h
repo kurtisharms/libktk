@@ -15,6 +15,22 @@ namespace Ktk
         void add(Widget* w);
         void remove(Widget* w);
 
+        virtual void setVisible(bool visible) = 0;
+        virtual void destroy() = 0;
+        virtual int exec() = 0;
+        virtual void setTitle(string title) = 0;
+        virtual void setSize(int width, int height) = 0;
+        virtual void setBackgroundColor(int red, int green, int blue) = 0;
+        virtual void setPosition(int xpos, int ypos) = 0;
+        virtual void setIconify(bool state) = 0;
+        virtual string getTitle() = 0;
+        virtual int getWidth() = 0;
+        virtual int getHeight() = 0;
+        virtual int getPosX() = 0;
+        virtual int getPosY() = 0;
+        virtual void raise() = 0;
+        virtual void lower() = 0;
+
         Ktk::Signal<Event*> OnDraw;
         Ktk::Signal<Event*> OnMouseOver;
         Ktk::Signal<Event*> OnMouseOut;

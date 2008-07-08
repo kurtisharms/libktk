@@ -5,31 +5,31 @@
 		<Cursor position="1291" topLine="0" />
 	</File>
 	<File name="src/FrameBase.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="533" topLine="12" />
+		<Cursor position="533" topLine="13" />
 	</File>
-	<File name="src/FrameBase.h" open="1" top="0" tabpos="2">
-		<Cursor position="555" topLine="0" />
+	<File name="src/FrameBase.h" open="0" top="0" tabpos="2">
+		<Cursor position="857" topLine="13" />
 	</File>
 	<File name="src/Frame_X11.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="667" topLine="18" />
+		<Cursor position="2669" topLine="156" />
 	</File>
 	<File name="src/Frame_X11.h" open="0" top="0" tabpos="0">
-		<Cursor position="698" topLine="18" />
+		<Cursor position="588" topLine="19" />
 	</File>
 	<File name="src/Ktk.h" open="0" top="0" tabpos="0">
 		<Cursor position="414" topLine="7" />
 	</File>
-	<File name="src/Signal.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="566" topLine="49" />
+	<File name="src/Signal.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="566" topLine="0" />
 	</File>
-	<File name="src/Signal.h" open="1" top="0" tabpos="3">
-		<Cursor position="771" topLine="36" />
+	<File name="src/Signal.h" open="1" top="0" tabpos="2">
+		<Cursor position="908" topLine="39" />
 	</File>
 	<File name="src/Widget.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="125" topLine="3" />
 	</File>
 	<File name="src/Widget.h" open="1" top="0" tabpos="1">
-		<Cursor position="438" topLine="3" />
+		<Cursor position="246" topLine="9" />
 	</File>
 	<File name="src/depends.h" open="0" top="0" tabpos="7">
 		<Cursor position="166" topLine="0" />
