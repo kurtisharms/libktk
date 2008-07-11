@@ -1,6 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 #include "Ktk.h"
+#include "CairoSurface.h"
 #include "Signal.h"
 
 namespace Ktk
