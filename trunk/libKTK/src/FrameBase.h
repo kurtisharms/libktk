@@ -12,6 +12,7 @@ namespace Ktk
         FrameBase();
         virtual ~FrameBase();
         vector<Ktk::Widget*> WidgetList;
+        vector<Ktk::CairoSurface*> CairoSurfaceVector;
         void add(Widget* w);
         void remove(Widget* w);
 

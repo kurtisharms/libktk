@@ -44,8 +44,8 @@ namespace Ktk
         {
             for (unsigned int i=0; i<funcVector.size(); i++)
             {
-                    func funcPtr = funcVector[i];
-                    funcPtr(ev);
+                func funcPtr = funcVector[i];
+                funcPtr(ev);
             }
         }
 

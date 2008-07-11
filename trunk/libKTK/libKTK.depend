@@ -158,12 +158,13 @@
 	"Widget.h"
 	"Button.h"
 
-1215515668 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
+1215773635 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
 	"Ktk.h"
 	"Widget.h"
 
-1215159209 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
+1215773741 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
 	"Ktk.h"
+	"CairoSurface.h"
 	"Signal.h"
 
 1215081903 /home/kurtis/Programming/Projects/KTK/libKTK/src/Frame_X11.h
@@ -328,10 +329,12 @@
 1215159769 source:/home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.cpp
 	"Signal.h"
 
-1215515968 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.h
+1215773741 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.h
 	"Ktk.h"
 	"Event.h"
 
 1215159521 /home/kurtis/Programming/Projects/KTK/libKTK/src/Signal.cpp
 	"Signal.h"
+
+1215773741 /home/kurtis/Programming/Projects/KTK/libKTK/src/CairoSurface.h
 
