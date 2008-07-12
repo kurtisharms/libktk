@@ -13,12 +13,14 @@ namespace Ktk
         Frame(string title, int width, int height, int xpos, int ypos);
         virtual ~Frame();
 
+        cairo_t *cr;
+
         void setVisible(bool visible);
         void destroy();
         int exec();
         void setTitle(string title);
         void setSize(int width, int height);
-        void setBackgroundColor(int red, int green, int blue);
+        void setBackgroundColor(float red, float green, float blue);
         void setPosition(int xpos, int ypos);
         void setIconify(bool state);
 
@@ -30,7 +32,6 @@ namespace Ktk
 
         void raise();
         void lower();
-
 
     private:
         typedef struct win

@@ -30,7 +30,7 @@ int main()
     b->OnMouseMove.raise(x);
 
     window->add(b);
-    window->remove(b);
+
     return window->exec();
 }
 

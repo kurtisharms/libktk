@@ -12,6 +12,7 @@ namespace Ktk
         win->height = height;
         win->xpos = xpos;
         win->ypos = ypos;
+        setBackgroundColor(1,1,1);
 
         win_init();
     }
@@ -76,6 +77,28 @@ namespace Ktk
 
     void Frame::win_draw()
     {
+        cairo_surface_t *surface;
+        //cairo_t *cr; We declare this in the Frame_X11.h class header file
+        Visual *visual = DefaultVisual(win->dpy, DefaultScreen (win->dpy));
+
+        XClearWindow(win->dpy, win->win);
+
+        surface = cairo_xlib_surface_create (win->dpy, win->win, visual,
+                                             win->width, win->height);
+        cr = cairo_create(surface);
+
+        cairo_set_source_rgb(cr, win->backgroundColor[0], win->backgroundColor[1], win->backgroundColor[2]);
+        cairo_rectangle(cr, 0, 0, getWidth(), getHeight());
+        cairo_fill(cr);
+
+        std::sort(WidgetVector.begin(), WidgetVector.end());
+        for (unsigned int i=0; i<WidgetVector.size(); i++)
+        {
+            WidgetVector[i]->draw_call(cr);
+        }
+
+        cairo_destroy(cr);
+        cairo_surface_destroy (surface);
     }
 
     void Frame::win_handle_events()
@@ -165,15 +188,15 @@ namespace Ktk
             XMapWindow(win->dpy, win->win);
     }
 
-    void Frame::setBackgroundColor(int red, int green, int blue)
+    void Frame::setBackgroundColor(float red, float green, float blue)
     {
-        red = (red > 255) ? 255 : red;
+        red = (red > 1.0) ? 1.0 : red;
         red = (red < 0) ? 0 : red;
 
-        green = (green > 255) ? 255 : green;
+        green = (green > 1.0) ? 1.0 : green;
         green = (green < 0) ? 0 : green;
 
-        blue = (blue > 255) ? 255 : blue;
+        blue = (blue > 1.0) ? 1.0 : blue;
         blue = (blue < 0) ? 0 : blue;
 
         win->backgroundColor[0] = red;

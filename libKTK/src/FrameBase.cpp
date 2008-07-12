@@ -14,20 +14,24 @@ namespace Ktk
     }
     void FrameBase::add(Widget* w)
     {
-        WidgetList.push_back(w);
+        WidgetVector.push_back(w);
     }
 
     void FrameBase::remove(Widget* w)
     {
         Widget* iw;
-        for (unsigned int i=0; i<WidgetList.size(); i++)
+        for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            iw = WidgetList[i];
+            iw = WidgetVector[i];
             if (iw->getId() == w->getId())
             {
-                WidgetList.erase(WidgetList.begin() + i);
+                WidgetVector.erase(WidgetVector.begin() + i);
             }
         }
+    }
+
+    void FrameBase::passEvent(Event* ev)
+    {
     }
 
 } // Ktk namespace
