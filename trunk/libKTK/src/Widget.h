@@ -12,8 +12,11 @@ namespace Ktk
     public:
         Widget();
         virtual ~Widget();
+        void draw_call(cairo_t *crPTR);
         virtual void draw() = 0;
         int getId();
+        void setZIndex(int i);
+        int getZIndex();
 
         Ktk::Signal<Event*> OnDraw;
         Ktk::Signal<Event*> OnMouseOver;
@@ -21,8 +24,16 @@ namespace Ktk
         Ktk::Signal<Event*> OnMouseMove;
         Ktk::Signal<Event*> OnFocus;
         Ktk::Signal<Event*> OnBlur;
+
+        bool operator <(Widget* right)
+        {
+            if (this->getZIndex() < right->getZIndex()) return true;
+            return false;
+        }
     protected:
         int widgetId;
+        int zindex;
+        cairo_t *cr;
     private:
     };
 

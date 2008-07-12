@@ -11,17 +11,18 @@ namespace Ktk
     public:
         FrameBase();
         virtual ~FrameBase();
-        vector<Ktk::Widget*> WidgetList;
+        vector<Ktk::Widget*> WidgetVector;
         vector<Ktk::CairoSurface*> CairoSurfaceVector;
         void add(Widget* w);
         void remove(Widget* w);
+        void passEvent(Event* ev);
 
         virtual void setVisible(bool visible) = 0;
         virtual void destroy() = 0;
         virtual int exec() = 0;
         virtual void setTitle(string title) = 0;
         virtual void setSize(int width, int height) = 0;
-        virtual void setBackgroundColor(int red, int green, int blue) = 0;
+        virtual void setBackgroundColor(float red, float green, float blue) = 0;
         virtual void setPosition(int xpos, int ypos) = 0;
         virtual void setIconify(bool state) = 0;
         virtual string getTitle() = 0;
