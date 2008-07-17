@@ -13,7 +13,30 @@ namespace Ktk
         virtual ~Button();
         virtual void draw();
 
+        void setText(std::string text);
+        void setFontFace(std::string fontFace);
+        void setItalic(bool var);
+        void setBold(bool var);
+        void setFontSize(double fontSize);
+
+        std::string getText();
+        std::string getFontFace();
+        bool getItalic();
+        bool getBold();
+        double getFontSize();
+
+
     protected:
+        typedef struct options
+        {
+            std::string fontFace;
+            bool boldFont;
+            bool italicFont;
+            double fontSize;
+            std::string text;
+        } options_t;
+
+        options_t options;
     private:
     };
 
