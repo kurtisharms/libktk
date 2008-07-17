@@ -4,11 +4,11 @@
 	<File name="Ktk.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="1291" topLine="0" />
 	</File>
-	<File name="src/Button.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="526" topLine="12" />
+	<File name="src/Button.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="646" topLine="26" />
 	</File>
-	<File name="src/Button.h" open="1" top="0" tabpos="5">
-		<Cursor position="217" topLine="0" />
+	<File name="src/Button.h" open="0" top="0" tabpos="5">
+		<Cursor position="778" topLine="21" />
 	</File>
 	<File name="src/CairoSurface.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="165" topLine="0" />
@@ -22,11 +22,11 @@
 	<File name="src/FrameBase.h" open="0" top="0" tabpos="3">
 		<Cursor position="225" topLine="7" />
 	</File>
-	<File name="src/Frame_X11.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="2702" topLine="76" />
+	<File name="src/Frame_X11.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1441" topLine="42" />
 	</File>
-	<File name="src/Frame_X11.h" open="1" top="0" tabpos="2">
-		<Cursor position="296" topLine="8" />
+	<File name="src/Frame_X11.h" open="0" top="0" tabpos="2">
+		<Cursor position="1128" topLine="38" />
 	</File>
 	<File name="src/Ktk.h" open="0" top="0" tabpos="0">
 		<Cursor position="414" topLine="7" />
@@ -37,11 +37,11 @@
 	<File name="src/Signal.h" open="0" top="0" tabpos="2">
 		<Cursor position="1186" topLine="54" />
 	</File>
-	<File name="src/Widget.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="293" topLine="14" />
+	<File name="src/Widget.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="209" topLine="33" />
 	</File>
-	<File name="src/Widget.h" open="1" top="0" tabpos="3">
-		<Cursor position="617" topLine="6" />
+	<File name="src/Widget.h" open="0" top="0" tabpos="3">
+		<Cursor position="418" topLine="13" />
 	</File>
 	<File name="src/depends.h" open="0" top="0" tabpos="7">
 		<Cursor position="166" topLine="0" />
