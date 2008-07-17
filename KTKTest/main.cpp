@@ -29,6 +29,10 @@ int main()
     b->OnMouseMove -= fun;
     b->OnMouseMove.raise(x);
 
+    b->setText("hi there!");
+    b->setFontFace("Monospace");
+    b->setFontSize(50.0);
+
     window->add(b);
 
     return window->exec();
