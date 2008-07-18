@@ -25,14 +25,14 @@ namespace Ktk
         strcpy (buttonText, options.text.c_str());
 
         cairo_set_source_rgb(cr, 0.5, 0.5, 0.5);
-        cairo_rectangle(cr, 0, 0, 60, 40);
+        cairo_rectangle(cr, getXPosition(), getYPosition(), getWidth(), getHeight());
         cairo_fill(cr);
 
         cairo_select_font_face (cr, fontFace, (options.italicFont) ? CAIRO_FONT_SLANT_ITALIC : CAIRO_FONT_SLANT_NORMAL,
                                 (options.boldFont) ? CAIRO_FONT_WEIGHT_BOLD : CAIRO_FONT_WEIGHT_NORMAL);
-        cairo_set_font_size (cr, 20.0);
+        cairo_set_font_size (cr, getFontSize());
 
-        cairo_move_to (cr, 0, 20);
+        cairo_move_to (cr, getXPosition() + getTextPadding(), getYPosition() + getFontSize() + getTextPadding());
         cairo_text_path (cr, buttonText);
         cairo_set_source_rgb (cr, 0, 0, 0);
         cairo_fill_preserve (cr);
@@ -66,6 +66,11 @@ namespace Ktk
         options.fontSize = fontSize;
     }
 
+    void Button::setTextPadding(double padding)
+    {
+        options.padding = padding;
+    }
+
     std::string Button::getFontFace()
     {
         return options.fontFace;
@@ -84,6 +89,11 @@ namespace Ktk
     double Button::getFontSize()
     {
         return options.fontSize;
+    }
+
+    double Button::getTextPadding()
+    {
+        return options.padding;
     }
 
 } // Ktk namespace
