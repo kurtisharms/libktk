@@ -10,6 +10,19 @@ namespace Ktk
         values.widgetId = rand();
     }
 
+
+    Widget::Widget(int xpos, int ypos, int width, int height)
+    {
+        values.zindex = 0;
+        srand((unsigned)time(0));
+        values.widgetId = rand();
+
+        values.xpos = xpos;
+        values.ypos = ypos;
+        values.width = width;
+        values.height = height;
+    }
+
     Widget::~Widget()
     {
         //dtor

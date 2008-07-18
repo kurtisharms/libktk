@@ -18,12 +18,14 @@ namespace Ktk
         void setItalic(bool var);
         void setBold(bool var);
         void setFontSize(double fontSize);
+        void setTextPadding(double padding);
 
         std::string getText();
         std::string getFontFace();
         bool getItalic();
         bool getBold();
         double getFontSize();
+        double getTextPadding();
 
 
     protected:
@@ -34,6 +36,7 @@ namespace Ktk
             bool italicFont;
             double fontSize;
             std::string text;
+            double padding;
         } options_t;
 
         options_t options;

@@ -11,6 +11,7 @@ namespace Ktk
     {
     public:
         Widget();
+        Widget(int xpos, int ypos, int width, int height);
         virtual ~Widget();
         void draw_call(cairo_t *crPTR);
         virtual void draw() = 0;
