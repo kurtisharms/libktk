@@ -54,6 +54,8 @@
 		<Unit filename="src/Signal.h" />
 		<Unit filename="src/Widget.cpp" />
 		<Unit filename="src/Widget.h" />
+		<Unit filename="src/WidgetCollection.cpp" />
+		<Unit filename="src/WidgetCollection.h" />
 		<Unit filename="src/depends.h" />
 		<Extensions>
 			<code_completion />

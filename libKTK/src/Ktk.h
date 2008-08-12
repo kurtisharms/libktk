@@ -23,6 +23,7 @@ extern "C"
 #include "Event.h"
 #include "Signal.h"
 #include "Widget.h"
+#include "WidgetCollection.h"
 #include "Button.h"
 #endif // BUILD_LIB
 

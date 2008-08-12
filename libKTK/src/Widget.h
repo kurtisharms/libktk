@@ -15,6 +15,8 @@ namespace Ktk
         virtual ~Widget();
         void draw_call(cairo_t *crPTR);
         virtual void draw() = 0;
+        virtual void drawPass();
+        virtual void drawFinal();
         int getId();
         void setZIndex(int i);
         int getZIndex();
@@ -32,6 +34,8 @@ namespace Ktk
         virtual int getHeight();
 
         Ktk::Signal<Event*> OnDraw;
+        Ktk::Signal<Event*> OnDrawPass;
+        Ktk::Signal<Event*> OnDrawFinal;
         Ktk::Signal<Event*> OnMouseOver;
         Ktk::Signal<Event*> OnMouseOut;
         Ktk::Signal<Event*> OnMouseMove;
