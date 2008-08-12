@@ -2,13 +2,13 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="Ktk.hpp" open="0" top="0" tabpos="5">
-		<Cursor position="1291" topLine="0" />
+		<Cursor position="48" topLine="6" />
 	</File>
-	<File name="src/Button.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="1268" topLine="23" />
+	<File name="src/Button.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="64" topLine="0" />
 	</File>
-	<File name="src/Button.h" open="1" top="0" tabpos="2">
-		<Cursor position="416" topLine="12" />
+	<File name="src/Button.h" open="1" top="0" tabpos="1">
+		<Cursor position="67" topLine="0" />
 	</File>
 	<File name="src/CairoSurface.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="165" topLine="0" />
@@ -16,11 +16,11 @@
 	<File name="src/CairoSurface.h" open="0" top="0" tabpos="5">
 		<Cursor position="189" topLine="0" />
 	</File>
-	<File name="src/FrameBase.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="382" topLine="12" />
+	<File name="src/FrameBase.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="597" topLine="13" />
 	</File>
-	<File name="src/FrameBase.h" open="0" top="0" tabpos="3">
-		<Cursor position="225" topLine="7" />
+	<File name="src/FrameBase.h" open="1" top="0" tabpos="9">
+		<Cursor position="282" topLine="11" />
 	</File>
 	<File name="src/Frame_X11.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="1441" topLine="42" />
@@ -28,8 +28,8 @@
 	<File name="src/Frame_X11.h" open="0" top="0" tabpos="2">
 		<Cursor position="1128" topLine="38" />
 	</File>
-	<File name="src/Ktk.h" open="0" top="0" tabpos="0">
-		<Cursor position="414" topLine="7" />
+	<File name="src/Ktk.h" open="1" top="1" tabpos="10">
+		<Cursor position="519" topLine="6" />
 	</File>
 	<File name="src/Signal.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="566" topLine="0" />
@@ -37,11 +37,17 @@
 	<File name="src/Signal.h" open="0" top="0" tabpos="2">
 		<Cursor position="1186" topLine="54" />
 	</File>
-	<File name="src/Widget.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="449" topLine="12" />
+	<File name="src/Widget.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1756" topLine="91" />
 	</File>
-	<File name="src/Widget.h" open="1" top="0" tabpos="5">
-		<Cursor position="176" topLine="4" />
+	<File name="src/Widget.h" open="1" top="0" tabpos="4">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="src/WidgetCollection.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="1414" topLine="0" />
+	</File>
+	<File name="src/WidgetCollection.h" open="1" top="0" tabpos="6">
+		<Cursor position="471" topLine="1" />
 	</File>
 	<File name="src/depends.h" open="0" top="0" tabpos="7">
 		<Cursor position="166" topLine="0" />

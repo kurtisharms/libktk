@@ -12,6 +12,10 @@ void ending(Event* x)
     cout << "Ending function" <<endl;
 }
 
+void beline()
+{
+}
+
 int main()
 {
     Frame *window = new Frame("hi there!",400,200,200,50);

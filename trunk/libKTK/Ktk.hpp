@@ -1,4 +1,4 @@
-/* KTK - an open source Window framework
+/* KTK - an open source Window framework/toolkit
  *
  * This library is free software; you can redistribute it and/or
  * modify it either under the terms of the GNU Lesser General Public

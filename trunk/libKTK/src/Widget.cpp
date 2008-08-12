@@ -28,6 +28,14 @@ namespace Ktk
         //dtor
     }
 
+    void Widget::drawPass()
+    {
+    }
+
+    void Widget::drawFinal()
+    {
+    }
+
     void Widget::draw_call(cairo_t *crPTR)
     {
         cr = crPTR;
