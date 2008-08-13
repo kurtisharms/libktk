@@ -6,13 +6,14 @@
 namespace Ktk
 {
 
-class WidgetCollection
-{
+    class WidgetCollection
+    {
     public:
         WidgetCollection();
         virtual ~WidgetCollection();
         void add(Ktk::Widget* w);
         void remove(Ktk::Widget* w);
+        void setSurface(cairo_t *crPTR);
         void drawPass();
         void draw();
         void drawFinal();
@@ -20,7 +21,7 @@ class WidgetCollection
     protected:
         vector<Ktk::Widget*> WidgetVector;
     private:
-};
+    };
 
 } // Ktk namespace
 

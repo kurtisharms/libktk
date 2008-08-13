@@ -11,7 +11,7 @@ namespace Ktk
     public:
         Button();
         virtual ~Button();
-        virtual void draw();
+        virtual void OnDrawCall();
 
         void setText(std::string text);
         void setFontFace(std::string fontFace);

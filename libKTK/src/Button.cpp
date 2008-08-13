@@ -14,7 +14,7 @@ namespace Ktk
         //dtor
     }
 
-    void Button::draw()
+    void Button::OnDrawCall()
     {
         // To set the fontface, we must pass a char* to caro_select_font_face() in the second argument
         // We therefore create a temporary "fontFace" variable to hold the converted value from c++ type std::string

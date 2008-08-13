@@ -28,18 +28,14 @@ namespace Ktk
         //dtor
     }
 
-    void Widget::drawPass()
-    {
-    }
-
-    void Widget::drawFinal()
-    {
-    }
-
     void Widget::draw_call(cairo_t *crPTR)
     {
         cr = crPTR;
-        this->draw();
+        this->OnDrawCall();
+    }
+
+    void Widget::setSurface(cairo_t *crPTR)
+    {
     }
 
     int Widget::getId()
@@ -108,6 +104,20 @@ namespace Ktk
     {
         return values.height;
     }
+
+    void Widget::OnDrawPassCall() {   }
+
+    void Widget::OnDrawFinalCall() {   }
+
+    void Widget::OnMouseOverCall() {   }
+
+    void Widget::OnMouseOutCall() {   }
+
+    void Widget::OnMouseMoveCall() {   }
+
+    void Widget::OnFocusCall() {   }
+
+    void Widget::OnBlurCall() {   }
 
 
 
