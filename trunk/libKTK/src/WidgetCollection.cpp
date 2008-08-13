@@ -3,24 +3,28 @@
 namespace Ktk
 {
 
-WidgetCollection::WidgetCollection()
-{
-    //ctor
-}
+    WidgetCollection::WidgetCollection()
+    {
+        //ctor
+    }
 
-WidgetCollection::~WidgetCollection()
-{
-    //dtor
-}
+    WidgetCollection::~WidgetCollection()
+    {
+        //dtor
+    }
 
-void WidgetCollection::add(Ktk::Widget* w)
-{
-    WidgetVector.push_back(w);
-}
+    void WidgetCollection::setSurface(cairo_t *crPTR)
+    {
+    }
 
-void WidgetCollection::remove(Ktk::Widget* w)
-{
-    Widget* iw;
+    void WidgetCollection::add(Ktk::Widget* w)
+    {
+        WidgetVector.push_back(w);
+    }
+
+    void WidgetCollection::remove(Ktk::Widget* w)
+    {
+        Widget* iw;
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
             iw = WidgetVector[i];
@@ -29,48 +33,48 @@ void WidgetCollection::remove(Ktk::Widget* w)
                 WidgetVector.erase(WidgetVector.begin() + i);
             }
         }
-}
+    }
 
-void WidgetCollection::drawPass()
-{
+    void WidgetCollection::drawPass()
+    {
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->drawPass();
+            WidgetVector[i]->OnDrawPassCall();
         }
-}
+    }
 
-void WidgetCollection::draw()
-{
+    void WidgetCollection::draw()
+    {
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->draw();
+            WidgetVector[i]->OnDrawCall();
         }
-}
+    }
 
-void WidgetCollection::drawFinal()
-{
+    void WidgetCollection::drawFinal()
+    {
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->drawFinal();
+            WidgetVector[i]->OnDrawFinalCall();
         }
-}
+    }
 
-void WidgetCollection::drawAll()
-{
+    void WidgetCollection::drawAll()
+    {
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->drawPass();
+            WidgetVector[i]->OnDrawPassCall();
         }
 
-                for (unsigned int i=0; i<WidgetVector.size(); i++)
+        for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->draw();
+            WidgetVector[i]->OnDrawCall();
         }
 
-                for (unsigned int i=0; i<WidgetVector.size(); i++)
+        for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
-            WidgetVector[i]->drawFinal();
+            WidgetVector[i]->OnDrawFinalCall();
         }
-}
+    }
 
 } // Ktk namespace

@@ -14,9 +14,7 @@ namespace Ktk
         Widget(int xpos, int ypos, int width, int height);
         virtual ~Widget();
         void draw_call(cairo_t *crPTR);
-        virtual void draw() = 0;
-        virtual void drawPass();
-        virtual void drawFinal();
+        void setSurface(cairo_t *crPTR);
         int getId();
         void setZIndex(int i);
         int getZIndex();
@@ -41,6 +39,15 @@ namespace Ktk
         Ktk::Signal<Event*> OnMouseMove;
         Ktk::Signal<Event*> OnFocus;
         Ktk::Signal<Event*> OnBlur;
+
+        virtual void OnDrawCall() = 0;
+        virtual void OnDrawPassCall();
+        virtual void OnDrawFinalCall();
+        virtual void OnMouseOverCall();
+        virtual void OnMouseOutCall();
+        virtual void OnMouseMoveCall();
+        virtual void OnFocusCall();
+        virtual void OnBlurCall();
 
         bool operator <(Widget* right)
         {
