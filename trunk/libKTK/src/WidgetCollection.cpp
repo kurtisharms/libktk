@@ -77,4 +77,9 @@ namespace Ktk
         }
     }
 
+    void WidgetCollection::sort()
+    {
+        std::sort(WidgetVector.begin(), WidgetVector.end());
+    }
+
 } // Ktk namespace

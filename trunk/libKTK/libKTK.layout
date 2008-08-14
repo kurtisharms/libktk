@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
 	<File name="Ktk.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="48" topLine="6" />
 	</File>
-	<File name="src/Button.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="187" topLine="0" />
+	<File name="src/Button.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="325" topLine="18" />
 	</File>
 	<File name="src/Button.h" open="1" top="0" tabpos="1">
-		<Cursor position="221" topLine="6" />
+		<Cursor position="221" topLine="9" />
 	</File>
 	<File name="src/CairoSurface.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="165" topLine="0" />
@@ -20,13 +20,13 @@
 		<Cursor position="597" topLine="13" />
 	</File>
 	<File name="src/FrameBase.h" open="1" top="0" tabpos="8">
-		<Cursor position="282" topLine="11" />
+		<Cursor position="282" topLine="2" />
 	</File>
-	<File name="src/Frame_X11.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="1441" topLine="42" />
+	<File name="src/Frame_X11.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="2764" topLine="84" />
 	</File>
-	<File name="src/Frame_X11.h" open="0" top="0" tabpos="2">
-		<Cursor position="1128" topLine="38" />
+	<File name="src/Frame_X11.h" open="1" top="0" tabpos="12">
+		<Cursor position="737" topLine="7" />
 	</File>
 	<File name="src/Ktk.h" open="1" top="0" tabpos="9">
 		<Cursor position="519" topLine="6" />
@@ -41,13 +41,13 @@
 		<Cursor position="575" topLine="22" />
 	</File>
 	<File name="src/Widget.h" open="1" top="0" tabpos="3">
-		<Cursor position="1148" topLine="30" />
+		<Cursor position="1708" topLine="9" />
 	</File>
-	<File name="src/WidgetCollection.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="1505" topLine="0" />
+	<File name="src/WidgetCollection.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1736" topLine="61" />
 	</File>
 	<File name="src/WidgetCollection.h" open="1" top="0" tabpos="5">
-		<Cursor position="282" topLine="0" />
+		<Cursor position="447" topLine="0" />
 	</File>
 	<File name="src/depends.h" open="0" top="0" tabpos="7">
 		<Cursor position="166" topLine="0" />

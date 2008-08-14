@@ -18,6 +18,7 @@ namespace Ktk
         void draw();
         void drawFinal();
         void drawAll();
+        void sort();
     protected:
         vector<Ktk::Widget*> WidgetVector;
     private:
