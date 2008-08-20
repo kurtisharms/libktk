@@ -1,17 +1,16 @@
-#ifndef BUTTON_H
-#define BUTTON_H
+#ifndef LABEL_H
+#define LABEL_H
 #include "Ktk.h"
 #include "Widget.h"
-#include "Label.h"
 
 namespace Ktk
 {
 
-    class Button: public Ktk::Widget
+    class Label: public Ktk::Widget
     {
     public:
-        Button();
-        virtual ~Button();
+        Label();
+        virtual ~Label();
         virtual void OnDrawCall();
 
         void setText(std::string text);
@@ -20,6 +19,7 @@ namespace Ktk
         void setBold(bool var);
         void setFontSize(double fontSize);
         void setTextPadding(double padding);
+        void setBackgroundColor(double red, double green, double blue);
 
         std::string getText();
         std::string getFontFace();
@@ -38,6 +38,10 @@ namespace Ktk
             double fontSize;
             std::string text;
             double padding;
+            bool paintBG;
+            double bg_red;
+            double bg_green;
+            double bg_blue;
         } options_t;
 
         options_t options;
@@ -46,4 +50,4 @@ namespace Ktk
 
 } // Ktk namespace
 
-#endif // BUTTON_H
+#endif // LABEL_H

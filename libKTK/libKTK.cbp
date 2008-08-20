@@ -52,6 +52,8 @@
 		<Unit filename="src/Frame_X11.cpp" />
 		<Unit filename="src/Frame_X11.h" />
 		<Unit filename="src/Ktk.h" />
+		<Unit filename="src/Label.cpp" />
+		<Unit filename="src/Label.h" />
 		<Unit filename="src/Signal.cpp" />
 		<Unit filename="src/Signal.h" />
 		<Unit filename="src/Widget.cpp" />

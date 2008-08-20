@@ -42,7 +42,7 @@
 1213090076 /home/kurtis/Programming/Projects/Main/KTK/libKTK/Frame_X11.h
 	"depends.h"
 
-1218534276 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
+1219227099 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
 	"Ktk.hpp"
 
 1213176524 /home/kurtis/Programming/Projects/KTK/libKTK/KTK.h
@@ -88,7 +88,7 @@
 1218535371 /home/kurtis/Programming/Projects/KTK/libKTK/Ktk.hpp
 	"src/Ktk.h"
 
-1218535436 /home/kurtis/Programming/Projects/KTK/libKTK/src/Ktk.h
+1219139731 /home/kurtis/Programming/Projects/KTK/libKTK/src/Ktk.h
 	"depends.h"
 	<cairo-xlib.h>
 	<X11/Xutil.h>
@@ -98,6 +98,7 @@
 	"Signal.h"
 	"Widget.h"
 	"WidgetCollection.h"
+	"Label.h"
 	"Button.h"
 
 1214997598 /home/kurtis/Programming/Projects/KTK/libKTK/src/depends.h
@@ -123,9 +124,10 @@
 	"Ktk.h"
 	"FrameBase.h"
 
-1218617400 /home/kurtis/Programming/Projects/KTK/libKTK/src/Button.h
+1219227539 /home/kurtis/Programming/Projects/KTK/libKTK/src/Button.h
 	"Ktk.h"
 	"Widget.h"
+	"Label.h"
 
 1214992708 /home/kurtis/Programming/Projects/KTK/libKTK/src/Event.h
 	"Ktk.h"
@@ -139,7 +141,11 @@
 
 1215773741 /home/kurtis/Programming/Projects/KTK/libKTK/src/CairoSurface.h
 
-1218628917 /home/kurtis/Programming/Projects/KTK/libKTK/src/WidgetCollection.h
+1218709125 /home/kurtis/Programming/Projects/KTK/libKTK/src/WidgetCollection.h
+	"Ktk.h"
+	"Widget.h"
+
+1219225330 /home/kurtis/Programming/Projects/KTK/libKTK/src/Label.h
 	"Ktk.h"
 	"Widget.h"
 

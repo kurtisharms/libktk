@@ -34,13 +34,22 @@ int main()
     b->OnMouseMove.raise(x);
 
     b->setTextPadding(10);
-    b->setPosition(10,10);
+    b->setPosition(0,0);
     b->setSize(50,50);
     b->setText("hi there!");
     b->setFontFace("Monospace");
     b->setFontSize(20.0);
 
+    Label *l = new Label();
+    l->setTextPadding(10);
+    l->setPosition(200,60);
+    l->setSize(50,50);
+    l->setText("There is a house upon a door...");
+    l->setFontFace("Arial");
+    l->setFontSize(20.0);
+
     window->add(b);
+    window->add(l);
 
     return window->exec();
 }
