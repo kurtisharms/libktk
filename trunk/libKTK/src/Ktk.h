@@ -24,6 +24,7 @@ extern "C"
 #include "Signal.h"
 #include "Widget.h"
 #include "WidgetCollection.h"
+#include "Label.h"
 #include "Button.h"
 #endif // BUILD_LIB
 
