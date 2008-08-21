@@ -105,10 +105,6 @@ namespace Ktk
         return values.height;
     }
 
-    void Widget::OnDrawPassCall() {   }
-
-    void Widget::OnDrawFinalCall() {   }
-
     void Widget::OnMouseOverCall() {   }
 
     void Widget::OnMouseOutCall() {   }
