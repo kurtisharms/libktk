@@ -14,10 +14,7 @@ namespace Ktk
         void add(Ktk::Widget* w);
         void remove(Ktk::Widget* w);
         void setSurface(cairo_t *crPTR);
-        void drawPass();
         void draw();
-        void drawFinal();
-        void drawAll();
         void sort();
     protected:
         vector<Ktk::Widget*> WidgetVector;

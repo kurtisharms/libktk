@@ -17,6 +17,8 @@ namespace Ktk
 
     void Label::OnDrawCall()
     {
+        cairo_rectangle(cr, getXPosition(), getYPosition(), getWidth(), getHeight());
+        cairo_clip(cr);
         // To set the fontface, we must pass a char* to caro_select_font_face() in the second argument
         // We therefore create a temporary "fontFace" variable to hold the converted value from c++ type std::string
         char* fontFace = new char [options.fontFace.size()+1];
@@ -37,24 +39,6 @@ namespace Ktk
         cairo_set_font_size (cr, getFontSize());
 
 
-        /*int i = 0;
-        while (i!=1)
-        {
-            cairo_text_extents_t fExt;
-            cairo_text_extents(cr, labelText, &fExt);
-            if (fExt->width < getWidth())
-            {
-                i = 1;
-            }
-            else
-            {
-                std::string str  = options.text;
-                str.resize(str.size()-1);
-                labelText = new char[str.size()+1];
-        strcpy (labelText, str.c_str());
-            }
-        }*/
-
         cairo_move_to (cr, getXPosition() + getTextPadding(), getYPosition() + getFontSize() + getTextPadding());
         cairo_text_path (cr, labelText);
         cairo_set_source_rgb (cr, 0, 0, 0);
@@ -62,6 +46,7 @@ namespace Ktk
         cairo_set_source_rgb (cr, 0, 0, 0);
         cairo_set_line_width (cr, 1);
         cairo_stroke (cr);
+        cairo_reset_clip (cr);
     }
 
     void Label::setText(std::string text)

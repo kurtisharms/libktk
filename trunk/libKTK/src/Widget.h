@@ -41,8 +41,6 @@ namespace Ktk
         Ktk::Signal<Event*> OnBlur;
 
         virtual void OnDrawCall() = 0;
-        virtual void OnDrawPassCall();
-        virtual void OnDrawFinalCall();
         virtual void OnMouseOverCall();
         virtual void OnMouseOutCall();
         virtual void OnMouseMoveCall();

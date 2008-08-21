@@ -48,8 +48,17 @@ int main()
     l->setFontFace("Arial");
     l->setFontSize(20.0);
 
+    Label *l2 = new Label();
+    l2->setTextPadding(10);
+    l2->setPosition(280,60);
+    l2->setSize(100,50);
+    l2->setText("File");
+    l2->setFontFace("Sans");
+    l2->setFontSize(16.0);
+
     window->add(b);
     window->add(l);
+    window->add(l2);
 
     return window->exec();
 }
