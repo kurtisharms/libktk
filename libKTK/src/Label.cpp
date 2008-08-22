@@ -17,6 +17,7 @@ namespace Ktk
 
     void Label::OnDrawCall()
     {
+        cairo_t* cr = createCairoContext();
         cairo_rectangle(cr, getXPosition(), getYPosition(), getWidth(), getHeight());
         cairo_clip(cr);
         // To set the fontface, we must pass a char* to caro_select_font_face() in the second argument
