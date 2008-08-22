@@ -53,7 +53,7 @@ int main()
     l2->setPosition(280,60);
     l2->setSize(100,50);
     l2->setText("File");
-    l2->setFontFace("Sans");
+    l2->setFontFace("Mono");
     l2->setFontSize(16.0);
 
     window->add(b);

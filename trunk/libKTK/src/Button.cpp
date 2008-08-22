@@ -23,7 +23,7 @@ namespace Ktk
         // To set the font text, we likewise have to make a temporary char* variable
         //char* buttonText = new char[options.text.size()+1];
         //strcpy (buttonText, options.text.c_str());
-
+cairo_t*  cr = createCairoContext();
         cairo_set_source_rgb(cr, 0.5, 0.5, 0.5);
         cairo_rectangle(cr, getXPosition(), getYPosition(), getWidth(), getHeight());
         cairo_fill(cr);

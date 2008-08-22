@@ -14,7 +14,8 @@ namespace Ktk
         Widget(int xpos, int ypos, int width, int height);
         virtual ~Widget();
         void draw_call(cairo_t *crPTR);
-        void setSurface(cairo_t *crPTR);
+        void setDrawContext(cairo_t *crPTR);
+        cairo_t* getDrawContext();
         int getId();
         void setZIndex(int i);
         int getZIndex();
@@ -30,6 +31,8 @@ namespace Ktk
         virtual int getYPosition();
         virtual int getWidth();
         virtual int getHeight();
+
+        cairo_t* createCairoContext();
 
         Ktk::Signal<Event*> OnDraw;
         Ktk::Signal<Event*> OnDrawPass;
@@ -64,7 +67,9 @@ namespace Ktk
             int height;
         } values_t;
         values_t values;
-        cairo_t *cr;
+        //cairo_t *cr;
+        cairo_surface_t* similar_surface;
+        cairo_t* widget_context;
     private:
     };
 
