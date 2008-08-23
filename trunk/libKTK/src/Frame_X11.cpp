@@ -95,6 +95,9 @@ namespace Ktk
         for (unsigned int i=0; i<WidgetVector.size(); i++)
         {
             WidgetVector[i]->draw_call(cr);
+            cairo_set_source_surface(WidgetVector[i]->getDrawContext(), surface, 0,0);
+            cairo_fill(WidgetVector[i]->getDrawContext());
+            cairo_fill(cr);
         }
 
         cairo_destroy(cr);

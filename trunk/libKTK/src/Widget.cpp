@@ -30,8 +30,13 @@ namespace Ktk
 
     void Widget::draw_call(cairo_t *crPTR)
     {
-        similar_surface = cairo_surface_create_similar( cairo_get_target(crPTR), CAIRO_CONTENT_COLOR, getWidth(), getHeight());
+        widget_surface = cairo_surface_create_similar( cairo_get_target(crPTR), CAIRO_CONTENT_COLOR, getWidth(), getHeight());
         this->OnDrawCall();
+    }
+
+    void Widget::setDrawSurface(cairo_surface_t *surfacePTR)
+    {
+        widget_surface = surfacePTR;
     }
 
     void Widget::setDrawContext(cairo_t *crPTR)
@@ -42,6 +47,11 @@ namespace Ktk
     cairo_t* Widget::getDrawContext()
     {
         return widget_context;
+    }
+
+    cairo_surface_t* Widget::getDrawSurface()
+    {
+        return widget_surface;
     }
 
     int Widget::getId()
@@ -113,7 +123,8 @@ namespace Ktk
 
     cairo_t* Widget::createCairoContext()
     {
-        return cairo_create(similar_surface);
+        widget_context = cairo_create(widget_surface);
+        return widget_context;
     }
 
     void Widget::OnMouseOverCall() {   }

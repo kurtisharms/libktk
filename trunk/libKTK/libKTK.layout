@@ -7,13 +7,13 @@
 	<File name="src/Application.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="101" topLine="0" />
 	</File>
-	<File name="src/Application.h" open="1" top="0" tabpos="5">
+	<File name="src/Application.h" open="1" top="0" tabpos="3">
 		<Cursor position="161" topLine="0" />
 	</File>
-	<File name="src/Button.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="771" topLine="10" />
+	<File name="src/Button.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1873" topLine="31" />
 	</File>
-	<File name="src/Button.h" open="1" top="0" tabpos="1">
+	<File name="src/Button.h" open="0" top="0" tabpos="1">
 		<Cursor position="89" topLine="0" />
 	</File>
 	<File name="src/CairoSurface.cpp" open="0" top="0" tabpos="4">
@@ -28,8 +28,8 @@
 	<File name="src/FrameBase.h" open="0" top="0" tabpos="8">
 		<Cursor position="282" topLine="3" />
 	</File>
-	<File name="src/Frame_X11.cpp" open="1" top="1" tabpos="9">
-		<Cursor position="2877" topLine="78" />
+	<File name="src/Frame_X11.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="3023" topLine="85" />
 	</File>
 	<File name="src/Frame_X11.h" open="0" top="0" tabpos="10">
 		<Cursor position="1244" topLine="16" />
@@ -37,11 +37,11 @@
 	<File name="src/Ktk.h" open="0" top="0" tabpos="9">
 		<Cursor position="539" topLine="6" />
 	</File>
-	<File name="src/Label.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="265" topLine="33" />
+	<File name="src/Label.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1812" topLine="33" />
 	</File>
-	<File name="src/Label.h" open="1" top="0" tabpos="3">
-		<Cursor position="140" topLine="17" />
+	<File name="src/Label.h" open="1" top="0" tabpos="1">
+		<Cursor position="140" topLine="11" />
 	</File>
 	<File name="src/Signal.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="566" topLine="0" />
@@ -49,11 +49,11 @@
 	<File name="src/Signal.h" open="0" top="0" tabpos="2">
 		<Cursor position="1186" topLine="54" />
 	</File>
-	<File name="src/Widget.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="885" topLine="33" />
+	<File name="src/Widget.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="585" topLine="23" />
 	</File>
-	<File name="src/Widget.h" open="1" top="0" tabpos="7">
-		<Cursor position="332" topLine="25" />
+	<File name="src/Widget.h" open="1" top="0" tabpos="5">
+		<Cursor position="352" topLine="9" />
 	</File>
 	<File name="src/WidgetCollection.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="348" topLine="15" />
