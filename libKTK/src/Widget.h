@@ -14,8 +14,10 @@ namespace Ktk
         Widget(int xpos, int ypos, int width, int height);
         virtual ~Widget();
         void draw_call(cairo_t *crPTR);
+        void setDrawSurface(cairo_surface_t *surfacePTR);
         void setDrawContext(cairo_t *crPTR);
         cairo_t* getDrawContext();
+        cairo_surface_t* getDrawSurface();
         int getId();
         void setZIndex(int i);
         int getZIndex();
@@ -68,7 +70,7 @@ namespace Ktk
         } values_t;
         values_t values;
         //cairo_t *cr;
-        cairo_surface_t* similar_surface;
+        cairo_surface_t* widget_surface;
         cairo_t* widget_context;
     private:
     };
