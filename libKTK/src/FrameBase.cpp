@@ -30,8 +30,19 @@ namespace Ktk
         }
     }
 
-    void FrameBase::passEvent(Event* ev)
-    {
-    }
+        void FrameBase::OnDrawCall(Event* ev)
+        {
+        }
+
+        void FrameBase::OnExposeCall(Event* ev) {   }
+        void FrameBase::OnMouseOverCall(MouseEvent* ev) {   }
+        void FrameBase::OnMouseOutCall(MouseEvent* ev) {   }
+        void FrameBase::OnMouseMoveCall(MouseEvent* ev) {   }
+        void FrameBase::OnMouseDownCall(MouseEvent* ev) {   }
+        void FrameBase::OnMouseUpCall(MouseEvent* ev) {   }
+        void FrameBase::OnKeyDownCall(KeyEvent* ev) {   }
+        void FrameBase::OnKeyUpCall(KeyEvent* ev) {   }
+        void FrameBase::OnCloseCall(Event* ev) {   }
+        void FrameBase::OnResizeCall(Event* ev) {   }
 
 } // Ktk namespace

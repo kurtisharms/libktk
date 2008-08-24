@@ -42,7 +42,7 @@
 1213090076 /home/kurtis/Programming/Projects/Main/KTK/libKTK/Frame_X11.h
 	"depends.h"
 
-1219496265 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
+1219516041 source:/home/kurtis/Programming/Projects/KTK/KTKTest/main.cpp
 	"Ktk.hpp"
 
 1213176524 /home/kurtis/Programming/Projects/KTK/libKTK/KTK.h
@@ -111,11 +111,15 @@
 	<ctime>
 	<cairo.h>
 
-1215855085 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
+1219572386 /home/kurtis/Programming/Projects/KTK/libKTK/src/FrameBase.h
 	"Ktk.h"
 	"Widget.h"
+	"WidgetCollection.h"
+	"Event.h"
+	"MouseEvent.h"
+	"KeyEvent.h"
 
-1219496424 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
+1219568500 /home/kurtis/Programming/Projects/KTK/libKTK/src/Widget.h
 	"Ktk.h"
 	"CairoSurface.h"
 	"Signal.h"
@@ -148,4 +152,12 @@
 1219225330 /home/kurtis/Programming/Projects/KTK/libKTK/src/Label.h
 	"Ktk.h"
 	"Widget.h"
+
+1219571940 /home/kurtis/Programming/Projects/KTK/libKTK/src/MouseEvent.h
+	"Ktk.h"
+	"Event.h"
+
+1219572031 /home/kurtis/Programming/Projects/KTK/libKTK/src/KeyEvent.h
+	"Ktk.h"
+	"Event.h"
 

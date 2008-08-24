@@ -2,6 +2,10 @@
 #define FRAMEBASE_H
 #include "Ktk.h"
 #include "Widget.h"
+#include "WidgetCollection.h"
+#include "Event.h"
+#include "MouseEvent.h"
+#include "KeyEvent.h"
 
 namespace Ktk
 {
@@ -12,10 +16,9 @@ namespace Ktk
         FrameBase();
         virtual ~FrameBase();
         vector<Ktk::Widget*> WidgetVector;
-        vector<Ktk::CairoSurface*> CairoSurfaceVector;
+        WidgetCollection* WidgetList;
         void add(Widget* w);
         void remove(Widget* w);
-        void passEvent(Event* ev);
 
         virtual void setVisible(bool visible) = 0;
         virtual void destroy() = 0;
@@ -34,12 +37,30 @@ namespace Ktk
         virtual void lower() = 0;
 
         Ktk::Signal<Event*> OnDraw;
-        Ktk::Signal<Event*> OnMouseOver;
-        Ktk::Signal<Event*> OnMouseOut;
-        Ktk::Signal<Event*> OnMouseMove;
-        Ktk::Signal<Event*> OnMove;
+        Ktk::Signal<Event*> OnExpose;
+        Ktk::Signal<MouseEvent*> OnMouseOver;
+        Ktk::Signal<MouseEvent*> OnMouseOut;
+        Ktk::Signal<MouseEvent*> OnMouseMove;
+        Ktk::Signal<MouseEvent*> OnMouseDown;
+        Ktk::Signal<MouseEvent*> OnMouseUp;
+        Ktk::Signal<KeyEvent*> OnKeyDown;
+        Ktk::Signal<KeyEvent*> OnKeyUp;
         Ktk::Signal<Event*> OnClose;
         Ktk::Signal<Event*> OnResize;
+
+        void OnDrawCall(Event* ev);
+        void OnExposeCall(Event* ev);
+        void OnMouseOverCall(MouseEvent* ev);
+        void OnMouseOutCall(MouseEvent* ev);
+        void OnMouseMoveCall(MouseEvent* ev);
+        void OnMouseDownCall(MouseEvent* ev);
+        void OnMouseUpCall(MouseEvent* ev);
+        void OnKeyDownCall(KeyEvent* ev);
+        void OnKeyUpCall(KeyEvent* ev);
+        void OnCloseCall(Event* ev);
+        void OnResizeCall(Event* ev);
+
+
     protected:
     private:
 

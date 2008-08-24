@@ -54,11 +54,20 @@ int main()
     l2->setSize(100,50);
     l2->setText("File");
     l2->setFontFace("Mono");
-    l2->setFontSize(16.0);
+    l2->setFontSize(15.0);
+
+    Label *l3 = new Label();
+    l3->setTextPadding(10);
+    l3->setPosition(0,100);
+    l3->setSize(100,50);
+    l3->setText("File");
+    l3->setFontFace("Sans");
+    l3->setFontSize(10.0);
 
     window->add(b);
     window->add(l);
     window->add(l2);
+    window->add(l3);
 
     return window->exec();
 }
