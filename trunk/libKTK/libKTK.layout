@@ -7,11 +7,11 @@
 	<File name="src/Application.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="101" topLine="0" />
 	</File>
-	<File name="src/Application.h" open="1" top="0" tabpos="3">
+	<File name="src/Application.h" open="0" top="0" tabpos="3">
 		<Cursor position="161" topLine="0" />
 	</File>
-	<File name="src/Button.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="1873" topLine="31" />
+	<File name="src/Button.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="272" topLine="7" />
 	</File>
 	<File name="src/Button.h" open="0" top="0" tabpos="1">
 		<Cursor position="89" topLine="0" />
@@ -22,26 +22,26 @@
 	<File name="src/CairoSurface.h" open="0" top="0" tabpos="5">
 		<Cursor position="189" topLine="0" />
 	</File>
-	<File name="src/FrameBase.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="597" topLine="13" />
+	<File name="src/FrameBase.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="1070" topLine="16" />
 	</File>
-	<File name="src/FrameBase.h" open="0" top="0" tabpos="8">
-		<Cursor position="282" topLine="3" />
+	<File name="src/FrameBase.h" open="1" top="0" tabpos="5">
+		<Cursor position="1330" topLine="45" />
 	</File>
-	<File name="src/Frame_X11.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="3023" topLine="85" />
+	<File name="src/Frame_X11.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="54" topLine="15" />
 	</File>
-	<File name="src/Frame_X11.h" open="0" top="0" tabpos="10">
-		<Cursor position="1244" topLine="16" />
+	<File name="src/Frame_X11.h" open="1" top="0" tabpos="6">
+		<Cursor position="1244" topLine="0" />
 	</File>
 	<File name="src/Ktk.h" open="0" top="0" tabpos="9">
 		<Cursor position="539" topLine="6" />
 	</File>
-	<File name="src/Label.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="1812" topLine="33" />
+	<File name="src/Label.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="364" topLine="31" />
 	</File>
-	<File name="src/Label.h" open="1" top="0" tabpos="1">
-		<Cursor position="140" topLine="11" />
+	<File name="src/Label.h" open="0" top="0" tabpos="1">
+		<Cursor position="286" topLine="9" />
 	</File>
 	<File name="src/Signal.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="566" topLine="0" />
@@ -49,14 +49,14 @@
 	<File name="src/Signal.h" open="0" top="0" tabpos="2">
 		<Cursor position="1186" topLine="54" />
 	</File>
-	<File name="src/Widget.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="585" topLine="23" />
+	<File name="src/Widget.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="750" topLine="27" />
 	</File>
-	<File name="src/Widget.h" open="1" top="0" tabpos="5">
-		<Cursor position="352" topLine="9" />
+	<File name="src/Widget.h" open="1" top="0" tabpos="2">
+		<Cursor position="1341" topLine="42" />
 	</File>
-	<File name="src/WidgetCollection.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="348" topLine="15" />
+	<File name="src/WidgetCollection.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="348" topLine="10" />
 	</File>
 	<File name="src/WidgetCollection.h" open="0" top="0" tabpos="5">
 		<Cursor position="351" topLine="6" />

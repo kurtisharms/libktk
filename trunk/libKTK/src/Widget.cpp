@@ -30,18 +30,9 @@ namespace Ktk
 
     void Widget::draw_call(cairo_t *crPTR)
     {
-        widget_surface = cairo_surface_create_similar( cairo_get_target(crPTR), CAIRO_CONTENT_COLOR, getWidth(), getHeight());
+        parent_context = crPTR;
+        //widget_surface = cairo_surface_create_similar( cairo_get_target(crPTR), CAIRO_CONTENT_COLOR, getWidth(), getHeight());
         this->OnDrawCall();
-    }
-
-    void Widget::setDrawSurface(cairo_surface_t *surfacePTR)
-    {
-        widget_surface = surfacePTR;
-    }
-
-    void Widget::setDrawContext(cairo_t *crPTR)
-    {
-        widget_context = crPTR;
     }
 
     cairo_t* Widget::getDrawContext()
@@ -123,8 +114,20 @@ namespace Ktk
 
     cairo_t* Widget::createCairoContext()
     {
+        widget_surface = cairo_surface_create_similar( cairo_get_target(parent_context), CAIRO_CONTENT_COLOR, getWidth(), getHeight());
         widget_context = cairo_create(widget_surface);
+       cairo_set_source_rgb (widget_context, 1, 1, 1);
+        cairo_paint (widget_context);
+        //cairo_rectangle(widget_context, getXPosition(), getYPosition(), getWidth(), getHeight());
+        //cairo_clip(widget_context);
         return widget_context;
+    }
+
+    void Widget::destroyCairoContext(cairo_t* crPTR)
+    {
+        cairo_set_source_surface(parent_context,widget_surface,getXPosition(),getYPosition());
+        cairo_paint (parent_context);
+        //cairo_reset_clip (crPTR);
     }
 
     void Widget::OnMouseOverCall() {   }
