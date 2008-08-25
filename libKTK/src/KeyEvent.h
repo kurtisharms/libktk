@@ -13,6 +13,11 @@ class KeyEvent: public Ktk::Event
         KeyEvent();
         /** Default destructor */
         virtual ~KeyEvent();
+
+        int mousePositionX;
+        int mousePositionY;
+        std::string key;
+        char ckey;
     protected:
     private:
 };

@@ -112,12 +112,42 @@ namespace Ktk
             {
             case KeyPress:
             {
-                XKeyEvent *kev = &xev.xkey;
-
-                if (kev->keycode == win->quit_code)
+                XKeyEvent *xkev = &xev.xkey;
+                if (xkev->keycode == win->quit_code)
                 {
                     return;
                 }
+
+                KeySym key_symbol = XKeycodeToKeysym(win->dpy, xev.xkey.keycode, 0);
+                switch (key_symbol)
+                {
+                case XK_1:
+                case XK_KP_1: /* '1' key was pressed, either the normal '1', or */
+                    /* the '1' on the keypad. draw the current pixel. */
+                    break;
+                case XK_Delete: /* DEL key was pressed, erase the current pixel. */
+                    break;
+                default:  /* anything else - check if it is a letter key */
+                    if (key_symbol >= XK_A && key_symbol <= XK_Z)
+                    {
+                        int ascii_key = key_symbol - XK_A + 'A';
+                        char c = static_cast<char>(ascii_key);
+                        kev->ckey = c;
+                        kev->key.assign(1,c);
+                        OnKeyDownCall(kev);
+                    }
+                    if (key_symbol >= XK_a && key_symbol <= XK_z)
+                    {
+                        int ascii_key = key_symbol - XK_a + 'a';
+                        char c = static_cast<char>(ascii_key);
+                        kev->ckey = c;
+                        kev->key.assign(1,c);
+                        OnKeyDownCall(kev);
+                    }
+                    break;
+
+                }
+                OnKeyDown.raise(kev);
             }
             break;
             case ConfigureNotify:

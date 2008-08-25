@@ -12,8 +12,12 @@ void ending(Event* x)
     cout << "Ending function" <<endl;
 }
 
-void beline()
+void beline(KeyEvent* x)
 {
+  std::ofstream myfile;
+  myfile.open ("/home/kurtis/Desktop/example.txt", ios::out | ios::app);
+  myfile << "Writing this to a file: " << x->key << "\n";
+  myfile.close();
 }
 
 int main()
@@ -23,6 +27,7 @@ int main()
     window->setTitle("It Works!");
     window->setPosition(150,150);
     window->setIconify(true);
+    window->OnKeyDown += beline;
     Button *b = new Button();
 
     Event* x = new Event();

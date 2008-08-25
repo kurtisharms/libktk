@@ -20,6 +20,10 @@ namespace Ktk
         void add(Widget* w);
         void remove(Widget* w);
 
+        Event* ev;
+        MouseEvent* mev;
+        KeyEvent* kev;
+
         virtual void setVisible(bool visible) = 0;
         virtual void destroy() = 0;
         virtual int exec() = 0;
