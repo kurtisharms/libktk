@@ -5,7 +5,9 @@ namespace Ktk
 
     FrameBase::FrameBase()
     {
-        //ctor
+        ev = new Event();
+        kev = new KeyEvent();
+        mev = new MouseEvent();
     }
 
     FrameBase::~FrameBase()
