@@ -23,13 +23,13 @@
 		<Cursor position="189" topLine="0" />
 	</File>
 	<File name="src/FrameBase.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="161" topLine="21" />
+		<Cursor position="161" topLine="0" />
 	</File>
 	<File name="src/FrameBase.h" open="1" top="0" tabpos="2">
 		<Cursor position="1453" topLine="36" />
 	</File>
-	<File name="src/Frame_X11.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="4173" topLine="114" />
+	<File name="src/Frame_X11.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="4129" topLine="65" />
 	</File>
 	<File name="src/Frame_X11.h" open="0" top="0" tabpos="6">
 		<Cursor position="1244" topLine="0" />
@@ -38,13 +38,13 @@
 		<Cursor position="73" topLine="0" />
 	</File>
 	<File name="src/KeyEvent.h" open="1" top="0" tabpos="4">
-		<Cursor position="358" topLine="3" />
+		<Cursor position="651" topLine="0" />
 	</File>
 	<File name="src/Ktk.h" open="0" top="0" tabpos="9">
 		<Cursor position="539" topLine="6" />
 	</File>
 	<File name="src/Label.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="364" topLine="31" />
+		<Cursor position="3020" topLine="47" />
 	</File>
 	<File name="src/Label.h" open="0" top="0" tabpos="1">
 		<Cursor position="286" topLine="24" />
