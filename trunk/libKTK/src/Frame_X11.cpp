@@ -110,6 +110,52 @@ namespace Ktk
             XNextEvent(win->dpy, &xev);
             switch (xev.type)
             {
+
+            case ButtonPress:
+            {
+                /* store the mouse button coordinates in 'int' variables. */
+                /* also store the ID of the window on which the mouse was */
+                /* pressed.                                               */
+                int x = xev.xbutton.x;
+                int y = xev.xbutton.y;
+                //the_win = xev.xbutton.window;
+
+                /* check which mouse button was pressed, and act accordingly. */
+                switch (xev.xbutton.button)
+                {
+                case Button1:
+                    /* draw a pixel at the mouse position. */
+                    break;
+                case Button2:
+                    /* erase a pixel at the mouse position. */
+                    break;
+                default: /* probably 3rd button - just ignore this event. */
+                    break;
+                }
+                break;
+            }
+
+
+            case MotionNotify:
+            {
+                /* store the mouse button coordinates in 'int' variables. */
+                /* also store the ID of the window on which the mouse was */
+                /* pressed.                                               */
+                int x = xev.xmotion.x;
+                int y = xev.xmotion.y;
+                //the_win = an_event.xbutton.window;
+
+                /* if the 1st mouse button was held during this event, draw a pixel */
+                /* at the mouse pointer location.                                   */
+                if (xev.xmotion.state & Button1Mask)
+                {
+                    /* draw a pixel at the mouse position. */
+                }
+                break;
+            }
+
+
+
             case KeyPress:
             {
                 XKeyEvent *xkev = &xev.xkey;
@@ -150,6 +196,7 @@ namespace Ktk
                 OnKeyDown.raise(kev);
             }
             break;
+
             case ConfigureNotify:
             {
                 XConfigureEvent *cev = &xev.xconfigure;

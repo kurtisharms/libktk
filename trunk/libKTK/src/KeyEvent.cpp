@@ -3,14 +3,14 @@
 namespace Ktk
 {
 
-KeyEvent::KeyEvent()
-{
-    //ctor
-}
+    KeyEvent::KeyEvent()
+    {
+        //ctor
+    }
 
-KeyEvent::~KeyEvent()
-{
-    //dtor
-}
+    KeyEvent::~KeyEvent()
+    {
+        //dtor
+    }
 
 } // Ktk namespace
